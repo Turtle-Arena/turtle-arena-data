@@ -6,7 +6,7 @@ ZIP:=zip
 MKDIR:=mkdir
 CP:=cp
 CD=cd
-RM:= rm
+RM:= rm -f
 
 BUILD_DIR:=packaged
 
@@ -57,6 +57,6 @@ nonzipped: makedirs
 
 clean:
 	$(RM) $(BUILD_DIR)/assets0.pk3
-	$(CD) $(BUILD_DIR) ; $(RM) -rf $(FILES)
+	$(CD) $(BUILD_DIR) ; $(RM) -r $(FILES)
 
 .PHONY: all makedirs nonzipped clean
