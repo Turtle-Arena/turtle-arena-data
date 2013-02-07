@@ -1,0 +1,104 @@
+raph_v9.mm3d bone joint notes:
+u_torso_control Torso can rotate just the torso
+joint_torso     Legs can rotate the torso
+root			Legs can rotate the whole model
+l_legs_control	Legs can rotate just the legs
+
+
+==Missing animations for raph_v9==
+(doesn't look quite right)=Want to improve animation.
+(don't care)=Don't care (or don't want) to create animation.
+(done)=Finished, unless I decide to modify it.
+(defaults to X)=The game automaticly defaults to X, but may want to create a specific animation.
+(defaults to reversed X)=The game automaticly defaults to X (played in reverse), but may want to create a specific animation.
+
+Quake3 Animations
+* LEGS_RUN (doesn't look quite right)
+* LEGS_JUMPB and LEGS_LANDB (don't look quite right)
+
+MISSIONPACK Animations (done)
+
+Turtle Arena Animations
+* BOTH_LADDER_STAND (done)
+* BOTH_LADDER_UP (doesn't look quite right)
+* BOTH_LADDER_DOWN (don't care) (defaults to reversed BOTH_LADDER_UP)
+
+* TORSO_PUTDEFAULT_* (don't care) (defaults to reversed TORSO_GETDEFAULT_*)
+* TORSO_STAND_DAISHO (don't care) (defaults to TORSO_STAND_SWORD2)
+* TORSO_STAND_HAMMER (defaults to TORSO_STAND_SWORD1_BOTH)
+* TORSO_STAND_HAMMER_PRIMARY (defaults to TORSO_STAND_SWORD1_PRIMARY)
+* TORSO_STAND_NUNCHUCKS (defaults to TORSO_STAND_SAI2)
+* TORSO_STAND_NUNCHUCKS1_PRIMARY (defaults to TORSO_STAND_SAI1_PRIMARY)
+
+* TORSO_ATTACK_SWORD1_BOTH_A (defaults to TORSO_ATTACK_SWORD1_PRIMARY_A)
+* TORSO_ATTACK_SWORD1_BOTH_B (defaults to TORSO_ATTACK_SWORD1_PRIMARY_B)
+* TORSO_ATTACK_SWORD1_BOTH_C  (defaults to TORSO_ATTACK_SWORD1_PRIMARY_C)
+
+* TORSO_ATTACK_SWORD1_PRIMARY_A (done)
+* TORSO_ATTACK_SWORD1_PRIMARY_B (done)
+* TORSO_ATTACK_SWORD1_PRIMARY_C (done)
+
+* TORSO_ATTACK_SWORD2_A (defaults to TORSO_ATTACK_SWORD1_PRIMARY_A)
+* TORSO_ATTACK_SWORD2_B (defaults to TORSO_ATTACK_SWORD1_PRIMARY_B)
+* TORSO_ATTACK_SWORD2_C (defaults to TORSO_ATTACK_SWORD1_PRIMARY_C)
+
+* TORSO_ATTACK_DAISHO_A (don't care) (defaults to TORSO_ATTACK_SWORD2_A)
+* TORSO_ATTACK_DAISHO_B (don't care) (defaults to TORSO_ATTACK_SWORD2_B)
+* TORSO_ATTACK_DAISHO_C (don't care) (defaults to TORSO_ATTACK_SWORD2_C)
+
+* TORSO_ATTACK_SAI2_A (copy of TORSO_ATTACK_SAI1_PRIMARY_A, would default to it also)
+* TORSO_ATTACK_SAI2_B (copy of TORSO_ATTACK_SAI1_PRIMARY_B, would default to it also)
+* TORSO_ATTACK_SAI2_C (done)
+
+* TORSO_ATTACK_SAI1_PRIMARY_A (done)
+* TORSO_ATTACK_SAI1_PRIMARY_B (done)
+* TORSO_ATTACK_SAI1_PRIMARY_C (done)
+
+* TORSO_ATTACK_BO_A (defaults to TORSO_ATTACK_SWORD1_BOTH_A)
+* TORSO_ATTACK_BO_B (defaults to TORSO_ATTACK_SWORD1_BOTH_B)
+* TORSO_ATTACK_BO_C (defaults to TORSO_ATTACK_SWORD1_BOTH_C)
+
+* TORSO_ATTACK_BO_PRIMARY_A (defaults to TORSO_ATTACK_SWORD1_PRIMARY_A)
+* TORSO_ATTACK_BO_PRIMARY_B (defaults to TORSO_ATTACK_SWORD1_PRIMARY_B)
+* TORSO_ATTACK_BO_PRIMARY_C (defaults to TORSO_ATTACK_SWORD1_PRIMARY_C)
+
+* TORSO_ATTACK_HAMMER_A (defaults to TORSO_ATTACK_SWORD1_BOTH_A)
+* TORSO_ATTACK_HAMMER_PRIMARY_A (defaults to TORSO_ATTACK_SWORD1_PRIMARY_A)
+
+* TORSO_ATTACK_NUNCHUCKS_A (defaults to TORSO_ATTACK_SAI2_A)
+* TORSO_ATTACK_NUNCHUCKS_B (defaults to TORSO_ATTACK_SAI2_B)
+* TORSO_ATTACK_NUNCHUCKS_C (defaults to TORSO_ATTACK_SAI2_C)
+* TORSO_ATTACK_NUNCHUCKS1_PRIMARY_A (defaults to TORSO_ATTACK_SAI1_PRIMARY_A)
+* TORSO_ATTACK_NUNCHUCKS1_PRIMARY_B (defaults to TORSO_ATTACK_SAI1_PRIMARY_B)
+* TORSO_ATTACK_NUNCHUCKS1_PRIMARY_C (defaults to TORSO_ATTACK_SAI1_PRIMARY_C)
+
+== Attack animations ==
+  * A - swing right to left, cutting motion
+  * B - swing left to right, cutting motion
+  * C - raise weapon in air and swing to the ground, attacking directly infront on player
+
+  * Running - only torso animates A B ...(continues without delay)
+    * BOTH_ATTACK_*_A
+    * BOTH_ATTACK_*_B
+
+  * Standing - torso and legs can animate A B A C (attack delay)
+    * BOTH_ATTACK_*_A
+    * BOTH_ATTACK_*_B
+    * BOTH_ATTACK_*_A
+    * BOTH_ATTACK_*_C
+
+== Notes ==
+cg_shadows 2 doesn't not work correctly with the model for some reason.
+Is it due to the holes in the meshes?
+
+Bo Staff goes in the floor during the raise and drop torso animations.
+  * wontfix: The animations are very short (~1/5 second and ~1/4 second), who will see and care?
+
+Raph's thumb get a little weird when rotated, should it be fixed?
+
+== Converting Wings3D to MM3D ==
+Export the model from wings3d into an .obj model. Import the .obj into MisfitModel3D.
+
+Raph's mouth is just a different material on the h_head_bottom mesh
+	when exported it needs to be renamed to h_mouth_right and h_mouth_left in the mm3d model
+

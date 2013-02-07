@@ -1,0 +1,12 @@
+u_carapace,models/players/fugitoid/body
+u_torso,models/players/fugitoid/body
+u_tail,models/players/fugitoid/body
+u_plastron,models/players/fugitoid/body
+u_arm_right,models/players/fugitoid/body
+u_arm_left,models/players/fugitoid/body
+u_belt,models/players/fugitoid/body
+u_belt_buckle,textures/common/invisible
+tag_flag,
+tag_weapon,
+tag_head,
+tag_torso,

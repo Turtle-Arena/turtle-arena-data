@@ -1,0 +1,8 @@
+h_head_top,$(dir)/head
+h_head_bottom,$(dir)/head
+h_eye_left,models/players/raph/white
+h_eye_right,models/players/raph/white
+h_mouth_left,models/players/raph/white
+h_mouth_right,models/players/raph/white
+h_bandana,$(dir)/head
+tag_head,

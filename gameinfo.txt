@@ -27,7 +27,7 @@ joingametypes {
 
 // mapName, mapLoadName, teamMembers, opponentName, gametypenum "timetobeat" gametypenum "timetobeat" ...
 maps {
-	{ "Subway" "subway" "1"		  "Exa"			0 "0" 4 "240" 5 "210" 6 "210" }
-	{ "Narrows" "team1" "1"		  "Exa"			0 "0" 4 "240" 5 "210" 6 "210" }
+	{ "Subway" "subway" "1"		  "Leo"			0 "0" 4 "240" 5 "210" 6 "210" }
+	{ "Narrows" "team1" "1"		  "Leo"			0 "0" 4 "240" 5 "210" 6 "210" }
 }
 

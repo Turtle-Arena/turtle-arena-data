@@ -1,0 +1,14 @@
+u_carapace,$(dir)/carapace.png
+u_torso,$(dir)/carapace.png
+u_tail,$(dir)/carapace.png
+u_plastron,models/players/raph/plastron.png
+u_arm_right,$(dir)/arm.png
+u_arm_left,$(dir)/arm.png
+u_belt,models/players/raph/belt.png
+u_belt_buckle,models/players/raph/belt.png
+u_belt_shoulder,models/players/raph/belt.png
+u_sword_holder,models/players/raph/belt.png
+tag_flag,
+tag_weapon,
+tag_head,
+tag_torso,

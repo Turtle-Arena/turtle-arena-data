@@ -1,0 +1,8 @@
+h_head_top,models/players/fugitoid/body
+h_head_bottom,models/players/fugitoid/body
+h_eye_left,models/players/fugitoid/eyes_mouth
+h_eye_right,models/players/fugitoid/eyes_mouth
+h_mouth_left,models/players/fugitoid/eyes_mouth
+h_mouth_right,models/players/fugitoid/eyes_mouth
+h_bandana,models/players/fugitoid/red
+tag_head,

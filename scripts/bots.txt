@@ -11,26 +11,33 @@
 //   color2 (default: 4)
 
 {
-name		Exa
-model		exa/default
-aifile		bots/default_c.c
+name		Raph
+model		raph/default
+aifile	bots/raph_c.c
 }
 
 {
-name		Cloe
-model		cloe/default
-aifile		bots/default_c.c
+name		Don
+model		don/default
+aifile	bots/raph_c.c
 }
 
 {
-name		Mossy
-model		mossy/default
-aifile		bots/default_c.c
+name		Leo
+model		leo/default
+aifile	bots/raph_c.c
 }
 
 {
-name		Raz
-model		raz/default
-aifile		bots/default_c.c
+name		Mike
+model		mike/default
+aifile	bots/raph_c.c
+}
+
+{
+name		FugiTurtle
+model		raph/fugitoid
+headmodel	*fugitoid
+aifile	bots/raph_c.c
 }
 
