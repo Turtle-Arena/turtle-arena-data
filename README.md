@@ -1,9 +1,9 @@
-ebx-data
+turtle-arena-data
 ==========
 
-Extraordinary Beat X is a free and open source cross-platform third-person action game using a modified version of the Spearmint engine.
+Turtle Arena is a free and open source cross-platform third-person action game using a modified version of the Spearmint engine.
 
-This repository contains the game's data files. The game's source code is located at <https://github.com/Extraordinary-Beat-X/ebx-code>.
+This repository contains the game's data files. The game's source code is located at <https://github.com/Turtle-Arena/turtle-arena-code>.
 
 
 Licenses
