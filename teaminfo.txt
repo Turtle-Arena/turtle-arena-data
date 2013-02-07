@@ -7,8 +7,8 @@ teams {
 	// name of team, asset, bot1, bot2, bot3, bot4, bot5
 
 	// Ideally teams should not all have the exact same characters.
-	{ "Shell" "ui/assets/shell" "Leo" "Don" "Raph" "Mike" "Leo" }
-	{ "Clover" "ui/assets/clover" "Leo" "Don" "Raph" "Mike" "Leo" }
+	{ "Katanas" "ui/assets/shell" "Leo" "Don" "Raph" "Mike" "Leo" }
+	{ "Sais" "ui/assets/clover" "Leo" "Don" "Raph" "Mike" "Leo" }
 }
 
 // character name ( used for display and head derivation ), base model (male=James, female=Janet, else uses text)
