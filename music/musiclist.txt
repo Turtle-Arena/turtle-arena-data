@@ -1,0 +1,78 @@
+// MusicDefs, similar to shaders
+// Loaded from music/musiclist.txt and music/*.music files
+
+/*
+music/example_with_intro
+{
+	intro "music/example_intro.wav" // introduction for main background music
+	loop "music/example_loop.wav" // main background music
+	volume 1.0 // multiplied times music volume to adjust volume of this track
+}
+
+music/example
+{
+	intro "music/example_loop.wav" // single music file to loop
+	volume 1.0 // multiplied times music volume to adjust volume of this track
+}
+*/
+
+// Main menu music
+music/menu
+{
+	intro "music/zero-project_-_Whispering_Wind.ogg"
+}
+
+// Arcade mode post-game music
+music/postgame
+{
+	intro "music/zero-project_-_Whispering_Wind.ogg"
+}
+
+// Boss battle music
+music/boss
+{
+	intro "music/NeilCrowe_-_EVENT.ogg"
+}
+
+// Underground city music
+music/subway
+{
+	intro "music/NeilCrowe_-_EVENT.ogg"
+}
+
+// City (Aboveground) music
+music/city
+{
+	intro "music/zero-project_-_Whispering_Wind.ogg"
+}
+
+// "Grass" music for outdoor levels that are mostly grass.
+music/grass
+{
+	intro "music/zero-project_-_Whispering_Wind.ogg"
+}
+
+// "Water" music for levels that are mostly water.
+music/water
+{
+	intro "music/zero-project_-_Whispering_Wind.ogg"
+}
+
+// Desert/Mountain
+music/desert
+{
+	intro "music/zero-project_-_Whispering_Wind.ogg"
+}
+
+// Peaceful snowy valley music
+music/snow
+{
+	intro "music/zero-project_-_Whispering_Wind.ogg"
+}
+
+// Space music
+music/space
+{
+	intro "music/NeilCrowe_-_EVENT.ogg"
+}
+

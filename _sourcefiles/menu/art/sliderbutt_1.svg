@@ -14,9 +14,9 @@
    height="128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.2 r9819"
+   inkscape:version="0.48.0 r9654"
    sodipodi:docname="sliderbutt_1.svg"
-   inkscape:export-filename="sliderbutt_1.png"
+   inkscape:export-filename="/home/zack/Turtle_Arena_svn/trunk/base/menu/art/sliderbutt_1.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -24,11 +24,11 @@
     <linearGradient
        id="linearGradient3100">
       <stop
-         style="stop-color:#e4c021;stop-opacity:1;"
+         style="stop-color:#7a4b0d;stop-opacity:1;"
          offset="0"
          id="stop3102" />
       <stop
-         style="stop-color:#ffff00;stop-opacity:1;"
+         style="stop-color:#e88c16;stop-opacity:1;"
          offset="1"
          id="stop3104" />
     </linearGradient>
@@ -36,10 +36,10 @@
        inkscape:collect="always"
        xlink:href="#linearGradient3100"
        id="linearGradient3106"
-       x1="12.698928"
-       y1="110.12526"
-       x2="42.078697"
-       y2="34.228741"
+       x1="12.354694"
+       y1="109.40665"
+       x2="47.242199"
+       y2="25.605204"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -49,16 +49,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="44.774059"
-     inkscape:cy="59.619464"
+     inkscape:zoom="2.8"
+     inkscape:cx="59.781924"
+     inkscape:cy="71.882907"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1026"
+     inkscape:window-width="1152"
+     inkscape:window-height="782"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">

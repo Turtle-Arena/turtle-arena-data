@@ -1,0 +1,258 @@
+// Turtle Arena main menu
+// Base on rfactory.org out_main.menu
+#include "ui/menudef.h"
+
+{
+	assetGlobalDef
+	{
+		font "fonts/font" 16
+		smallFont "fonts/smallfont" 12
+		bigFont "fonts/bigfont" 20
+		cursor "ui/assets/3_cursor3"
+		itemFocusSound THEME_SND_FOCUS
+		menuEnterSound THEME_SND_MENU_ENTER
+		menuExitSound THEME_SND_MENU_EXIT
+		// ZTM: menuBuzzSound only loads sound, does not use it
+		//menuBuzzSound THEME_SND_BUZZ
+
+		fadeClamp 1.0
+		fadeCycle 1
+		fadeAmount 0.1
+	}
+
+	menuDef
+	{
+		name "main"
+		background THEME_BACKGROUND
+		fullScreen MENU_TRUE
+		style WINDOW_STYLE_SHADER
+		focusColor 1 0.43 0 1.25
+
+		onOpen
+		{
+			playlooped "music/menu.wav" ;
+			//setcvar "ui_q3model" 1 ;
+		}
+
+		/*onESC
+		{
+			uiScript "quit"
+		}*/
+
+		//
+		// Player Model PreLoad
+		//
+		itemDef
+		{
+			name modelselection
+			ownerdraw UI_PLAYERMODEL
+			rect 0 0 0 0
+			decoration
+			visible MENU_TRUE
+		}
+
+		//
+		// Title Banner
+		//
+		itemDef
+		{
+			name titlebanner
+			style WINDOW_STYLE_SHADER
+			rect 64 32 512 256
+			background "menu/art/titlebanner"
+			visible MENU_TRUE
+			decoration
+		}
+
+		//
+		// Play Button
+		//
+		itemDef
+		{
+			name newgamebutton
+			type ITEM_TYPE_BUTTON
+			rect 255 275 130 24
+			text "Play"
+			textscale 0.5
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			mouseEnter
+			{
+				show newgametext
+			}
+			mouseExit
+			{
+				hide newgametext
+			}
+			action
+			{
+				close "main";
+				open "play"
+			}
+		}
+		//
+		// Multiplayer Button
+		//
+		itemDef
+		{
+			name multiplayerbutton
+			text "Multiplayer"
+			type ITEM_TYPE_BUTTON
+			rect 255 305 130 24
+			textscale 0.5
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			mouseEnter
+			{
+				show multiplayertext
+			}
+			mouseExit
+			{
+				hide multiplayertext
+			}
+			action
+			{
+				close "main";
+				open "multiplayer"
+			}
+		}
+
+		//
+		// Options Button
+		//
+		itemDef
+		{
+			name optionsbutton
+			text "Options"
+			type ITEM_TYPE_BUTTON
+			rect 255 335 130 24
+			textscale 0.5
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			mouseEnter
+			{
+				show optionstext
+			}
+			mouseExit
+			{
+				hide optionstext
+			}
+			action
+			{
+				close "main";
+				open "options"
+			}
+		}
+
+		//
+		// Quit button
+		//
+		itemDef
+		{
+			name exitbutton
+			text "Quit"
+			type ITEM_TYPE_BUTTON
+			rect 255 365 130 24
+			textscale 0.5
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			mouseEnter
+			{
+				show exittext
+			}
+			mouseExit
+			{
+				hide exittext
+			}
+			action
+			{
+				hide "exittext";
+				open "quit"
+			}
+		}
+
+		//
+		// Focus text for the buttons
+		//
+		itemDef
+		{
+			name newgametext
+			rect 0 444 640 24
+			text "Play main game, demos, etc"
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 320
+			forecolor 1 1 1 1
+			visible MENU_FALSE
+			decoration
+		}
+
+		itemDef
+		{
+			name multiplayertext
+			rect 0 444 640 24
+			text "Play a network game"
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 320
+			forecolor 1 1 1 1
+			visible MENU_FALSE
+			decoration
+		}
+
+		itemDef
+		{
+			name optionstext
+			rect 0 444 640 24
+			text "Configure game settings"
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 320
+			forecolor 1 1 1 1
+			visible MENU_FALSE
+			decoration
+		}
+
+		itemDef
+		{
+			name exittext
+			rect 0 444 640 24
+			text "Exit game"
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 320
+			forecolor 1 1 1 1
+			visible MENU_FALSE
+			decoration
+		}
+	}
+}
+

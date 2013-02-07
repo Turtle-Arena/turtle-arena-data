@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="128"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="guard2.svg"
+   inkscape:export-filename="/home/zack/turtlearena/svn/trunk/base-src/models/powerups/doubler2.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3110">
+      <stop
+         style="stop-color:#fce94f;stop-opacity:1;"
+         offset="0"
+         id="stop3112" />
+      <stop
+         style="stop-color:#fce94f;stop-opacity:0;"
+         offset="1"
+         id="stop3114" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3110"
+       id="linearGradient3116"
+       x1="416.18765"
+       y1="171.94164"
+       x2="208.18436"
+       y2="171.94164"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-27.489717,-99.500033)" />
+    <filter
+       id="filter3128"
+       inkscape:label="Cross-smooth"
+       inkscape:menu="Blurs"
+       inkscape:menu-tooltip="Blur inner borders and intersections"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3130"
+         stdDeviation="3" />
+      <feColorMatrix
+         id="feColorMatrix3132"
+         result="fbSourceGraphic"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -2.5 " />
+    </filter>
+    <filter
+       id="filter3904"
+       inkscape:label="Motion blur, horizontal"
+       inkscape:menu="Blurs"
+       inkscape:menu-tooltip="Blur as if the object flies horizontally; adjust Standard Deviation to vary force"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3906"
+         in="SourceGraphic"
+         stdDeviation="5 0.01" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3110-9"
+       id="linearGradient3116-2"
+       x1="399.51535"
+       y1="171.94164"
+       x2="255.28537"
+       y2="171.94164"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-26.738897,-99.500026)" />
+    <linearGradient
+       id="linearGradient3110-9">
+      <stop
+         style="stop-color:#fce94f;stop-opacity:1;"
+         offset="0"
+         id="stop3112-3" />
+      <stop
+         style="stop-color:#fce94f;stop-opacity:0;"
+         offset="1"
+         id="stop3114-8" />
+    </linearGradient>
+    <filter
+       id="filter3904-2"
+       inkscape:label="Motion blur, horizontal"
+       inkscape:menu="Blurs"
+       inkscape:menu-tooltip="Blur as if the object flies horizontally; adjust Standard Deviation to vary force"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3906-4"
+         in="SourceGraphic"
+         stdDeviation="5 0.01" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3110-9"
+       id="linearGradient3924"
+       x1="399.51535"
+       y1="171.94164"
+       x2="255.28537"
+       y2="171.94164"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-26.738897,-99.500026)" />
+    <linearGradient
+       y2="171.43655"
+       x2="338.22324"
+       y1="171.43655"
+       x1="412.19763"
+       gradientTransform="translate(19.16333,-99.499904)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3934"
+       xlink:href="#linearGradient3110-9"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="270.8618"
+     inkscape:cy="66.929947"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1152"
+     inkscape:window-height="810"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect3902"
+       width="512"
+       height="128"
+       x="0"
+       y="-1.7763568e-15" />
+    <text
+       xml:space="preserve"
+       style="font-size:98px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.85;fill:#fce94f;fill-opacity:1;stroke:none;font-family:'M+ 1c';-inkscape-font-specification:'M+ 1c Bold'"
+       x="83.113495"
+       y="95.678581"
+       id="text3085"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3087"
+         x="83.113495"
+         y="95.678581">Guard</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:98px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.71705424;fill:url(#linearGradient3116);fill-opacity:1;stroke:none;filter:url(#filter3904);font-family:'M+ 1c';-inkscape-font-specification:'M+ 1c Bold'"
+       x="91.244209"
+       y="96.104866"
+       id="text3085-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3087-0"
+         x="91.244209"
+         y="96.104866"
+         style="fill:url(#linearGradient3116);fill-opacity:1">Guard</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:98px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.41085271;fill:url(#linearGradient3934);fill-opacity:1;stroke:none;filter:url(#filter3904-2);font-family:'M+ 1c';-inkscape-font-specification:'M+ 1c Bold'"
+       x="137.89717"
+       y="96.105003"
+       id="text3085-0-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3087-0-4"
+         x="137.89717"
+         y="96.105003"
+         style="fill:url(#linearGradient3934);fill-opacity:1">Guard</tspan></text>
+  </g>
+</svg>

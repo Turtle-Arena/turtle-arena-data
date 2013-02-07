@@ -1,0 +1,31 @@
+//
+// Laser Gun for Laser Tag! (set g_laserTag to 1 or 2)
+//
+
+projectile "p_laser"
+{
+	instantDamage 1
+	damage 40
+	trailType PT_RAIL
+}
+
+weapon "w_lasergun"
+{
+	weapontype WT_GUN
+	model "models/weapons2/railgun/railgun.md3"
+	attackDelay 500
+	flashColor 0 0 0
+	projectile "p_laser"
+}
+
+weapongroup "wp_lasergun"
+{
+	randomSpawn 0 // Don't want this in weapon_random entity...
+	//itemName "weapon_lasergun"
+	pickupName "Laser Gun"
+	pickupModel "models/weapons2/railgun/railgun.md3"
+	iconName "icons/iconw_lasergun"
+	//pickupAmmo 10
+	weapon_primary "w_lasergun"
+}
+

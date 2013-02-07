@@ -1,6 +1,36 @@
+// Bots
+//
+// Normal fields;
+//   name - Name of the bot.
+//   model - Player model dir [/skin] (Example: "directory/skin" or just "directory" to use "default" skin)
+//   aifile - Path in botfiles directory to the bot's main AI file.
+//
+// Other fields;
+//   headmodel (default: uses value from model field)
+//   color1 (default: 5)
+//   color2 (default: 4)
+
 {
-name		Sarge
-model		sarge/default
-aifile	bots/default_c.c
+name		Exa
+model		exa/default
+aifile		bots/default_c.c
+}
+
+{
+name		Cloe
+model		cloe/default
+aifile		bots/default_c.c
+}
+
+{
+name		Mossy
+model		mossy/default
+aifile		bots/default_c.c
+}
+
+{
+name		Raz
+model		raz/default
+aifile		bots/default_c.c
 }
 

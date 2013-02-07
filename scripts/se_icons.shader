@@ -11,29 +11,48 @@ icons/medkit
 	}
 }
 
-icons/teleporter
-{
-	nopicmip
-	{
-		map icons/teleporter.png
-		blendFunc blend
-	}
-}
-
-icons/regen
-{
-	nopicmip
-	{
-		map icons/regen.png
-		blendFunc blend
-	}
-}
-
 icons/portal
 {
 	nomipmaps
 	{
 		map icons/portal.png
+		blendFunc blend
+	}
+}
+
+// Shurikens
+icons/shuriken
+{
+	nomipmaps
+	{
+		map icons/shuriken.png
+		blendFunc blend
+	}
+}
+
+icons/shurikenelectric
+{
+	nomipmaps
+	{
+		map icons/shurikenelectric.png
+		blendFunc blend
+	}
+}
+
+icons/shurikenfire
+{
+	nomipmaps
+	{
+		map icons/shurikenfire.png
+		blendFunc blend
+	}
+}
+
+icons/shurikenlaser
+{
+	nomipmaps
+	{
+		map icons/shurikenlaser.png
 		blendFunc blend
 	}
 }
@@ -118,6 +137,132 @@ medal_capture
 }
 
 // WEAPON ICONS
+icons/iconw_default
+{
+	nomipmaps
+	{
+		map icons/iconw_default.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_katanas
+{
+	nomipmaps
+	{
+		map icons/iconw_katanas.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_daisho
+{
+	nomipmaps
+	{
+		map icons/iconw_daisho.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_sais
+{
+	nomipmaps
+	{
+		map icons/iconw_sais.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_nunchucks
+{
+	nomipmaps
+	{
+		map icons/iconw_nunchucks.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_hammer
+{
+	nomipmaps
+	{
+		map icons/iconw_hammer.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_axe
+{
+	nomipmaps
+	{
+		map icons/iconw_axe.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_longsword
+{
+	nomipmaps
+	{
+		map icons/iconw_longsword.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_bat
+{
+	nomipmaps
+	{
+		map icons/iconw_bat.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_bo
+{
+	nomipmaps
+	{
+		map icons/iconw_bo.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_bamboo
+{
+	nomipmaps
+	{
+		map icons/iconw_bamboo.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_triblaster
+{
+	nomipmaps
+	{
+		map icons/iconw_triblaster.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_electric
+{
+	nomipmaps
+	{
+		map icons/iconw_electric.png
+		blendFunc blend
+	}
+}
+
+icons/iconw_homing
+{
+	nomipmaps
+	{
+		map icons/iconw_homing.png
+		blendFunc blend
+	}
+}
+
 icons/iconw_rocket
 {
 	nomipmaps
@@ -255,6 +400,25 @@ icons/iconf_neutral3
 	}
 }
 
+// SCORE ICONS
+icons/iconi_star
+{
+	nomipmaps
+	{
+		map icons/iconi_star.png
+		blendFunc blend
+	}
+}
+
+icons/iconi_sphere
+{
+	nomipmaps
+	{
+		map icons/iconi_sphere.png
+		blendFunc blend
+	}
+}
+
 // SCOREBOARD ICONS
 scoreboardName
 {
@@ -330,4 +494,3 @@ icons/scout
 		blendFunc blend
 	}
 }
-

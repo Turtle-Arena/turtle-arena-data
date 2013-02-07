@@ -1,0 +1,328 @@
+/*
+===========================================================================
+Copyright (C) 2007 Open Arena Team
+Copyright (C) 2010 Zack Middleton
+
+This file is part of Turtle Arena.
+
+Turtle Arena is free software; you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+
+Turtle Arena is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Turtle Arena; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+===========================================================================
+*/
+
+// Incomplete HUD for MISSIONPACK UI
+
+#include "ui/menudef.h"
+{
+  assetGlobalDef {
+	font "gfx/2d/bigchars" 16
+	smallFont "gfx/2d/bigchars" 12
+	bigFont "gfx/2d/bigchars" 20
+	cursor "gfx/ui/cursor"
+	shadowColor 0.0 0.0 0.0 0.25
+	}
+
+menuDef {
+	name "hud"
+	fullScreen 0
+	visible 1
+	focusColor 0.1 0.6 1 1
+	rect 40 55 190 157
+
+itemDef {
+	name "backer"
+	ownerdraw CG_TEAM_COLOR
+	textstyle 3
+	textscale 0.7
+	rect 0 0 150 102
+	//border 1
+	style WINDOW_STYLE_FILLED
+	background "ui/assets/sbar"
+	//bordercolor   0.25 0.25 0.25 0.7
+	forecolor     0 1 0 0.33
+	backcolor     0 1 0 0.33
+	outlinecolor  1   0.5   0.01   0.3
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "thehead"
+	rect -20 0 60 60
+	visible 1
+	decoration
+	ownerdraw CG_PLAYER_HEAD
+	}
+
+itemDef {
+	name "healthness"
+	textstyle 3
+	textscale 1
+	rect 50 0 84 48
+	textalign 0
+	textalignx 1
+	textaligny 1
+	ownerdraw CG_PLAYER_HEALTH
+	forecolor 1 1 1 1
+	decoration
+	visible 1
+	addColorRange -999 24 1 0 0 1 //Red
+	addColorRange  25 100 1 0.69 0 1 //Yellow
+	addColorRange 101 999 1 1 1 1 //White
+	}
+
+// Turtle Arena doesn't have armor, support on HUD anyway?...
+/*
+itemDef {
+	name aricon
+	rect 500 0 50 50
+	visible 1
+	decoration
+	ownerdraw CG_PLAYER_ARMOR_ICON
+	}
+
+itemDef {
+	name armor
+	textstyle 3
+	textscale 1
+	rect 550 0 84 48
+	textalign 0
+	textalignx 1
+	textaligny 1
+	textscale .75
+	ownerdraw CG_PLAYER_ARMOR_VALUE
+	forecolor 1 1 0.6 1
+	decoration
+	visible 1 
+	}
+*/
+
+// Turtle Arena uses weapon models
+itemDef {
+	name "amicon"
+	rect 0 52 48 48 // 3D: 0 52 80 48
+	visible 1
+	decoration
+	ownerdraw CG_PLAYER_AMMO_ICON2D // ZTM: 3D doesn't look right currently.
+	}
+
+itemDef {
+	name "ammo"
+	textstyle 3
+	textscale 1
+	rect 20 30 84 48
+	textalign 0
+	textalignx 1
+	textaligny 1
+	textscale .75
+	ownerdraw CG_PLAYER_AMMO_VALUE
+	forecolor 1 1 1 1
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "itemicon"
+	rect 80 52 48 48
+	visible 1
+	decoration
+	ownerdraw CG_PLAYER_ITEM
+	}
+
+itemDef {
+	name "itemvalue"
+	textstyle 3
+	textscale 1
+	rect 100 30 84 48
+	textalign 0
+	textalignx 1
+	textaligny 1
+	textscale .75
+	ownerdraw CG_PLAYER_ITEM_VALUE
+	forecolor 1 1 1 1
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "flag1"
+	rect 151 10 35 35
+	visible 1
+	decoration
+	ownerdraw CG_PLAYER_HASFLAG
+	}
+
+itemDef {
+	name "skull1"
+	rect 151 10 50 35
+	visible 1
+	decoration
+	ownerdraw CG_HARVESTER_SKULLS
+	}
+
+itemDef {
+	name "perpow"
+	rect 0 105 48 48
+	visible 1
+	decoration
+	ownerdraw CG_CTF_POWERUP
+	}
+
+
+
+itemDef {
+	name "spscore"
+	rect 380 15 40 12
+	visible 1
+	decoration
+	forecolor 1 1 1 1
+	text "ScoreLimit: "
+	textscale .25
+	ownerdrawflag CG_SHOW_ANYNONTEAMGAME
+	ownerdraw CG_CAPFRAGLIMIT
+	}
+
+itemDef {
+	name "spscore1"
+	rect 380 30 40 12
+	visible 1
+	decoration
+	text "1st: "
+	textscale .25
+	forecolor .25 .25 1 1
+	ownerdrawflag CG_SHOW_ANYNONTEAMGAME
+	ownerdraw CG_1STPLACE
+	}
+
+itemDef {
+	name "spscore2"
+	rect 440 30 40 12
+	visible 1
+	decoration
+	text "2nd: "
+	textscale .25
+	forecolor 1 0 0 1
+	ownerdrawflag CG_SHOW_ANYNONTEAMGAME
+	ownerdraw CG_2NDPLACE
+	}
+
+itemDef {
+	name "spscore3"
+	rect 380 45 40 0
+	visible 1
+	decoration
+	text "Score: "
+	textscale .2
+	forecolor 1 1 1 1
+	ownerdrawflag CG_SHOW_ANYNONTEAMGAME
+	ownerdraw CG_PLAYER_SCORE
+	}
+
+itemDef {
+	name "tscore:"
+	rect 380 15 40 12
+	visible 1
+	decoration
+	forecolor 1 1 1 1
+	text "CaptureLimit: "
+	textscale .2
+	ownerdrawflag CG_SHOW_ANYTEAMGAME
+	ownerdraw CG_CAPFRAGLIMIT
+	}
+
+itemDef {
+	name "tscore1"
+	rect 380 30 16 0
+	visible 1
+	decoration
+	forecolor .25 .25 1 1
+	text "Blue: "
+	textscale .2
+	ownerdrawflag CG_SHOW_ANYTEAMGAME
+	ownerdraw CG_BLUE_SCORE
+	}
+
+itemDef {
+	name "tscore2"
+	rect 380 40 20 0
+	visible 1
+	decoration
+	forecolor 1 0 0 1
+	text "Red: "
+	textscale .2
+	ownerdrawflag CG_SHOW_ANYTEAMGAME
+	ownerdraw CG_RED_SCORE
+	}
+
+itemDef {
+	name "tscore3"
+	rect 380 50 16 0
+	visible 1
+	decoration
+	forecolor 1 1 1 1
+	text "Score: "
+	textscale .2
+	ownerdrawflag CG_SHOW_ANYTEAMGAME
+	ownerdraw CG_PLAYER_SCORE
+	}
+
+}
+
+
+// ==============================
+// | VOICE CHAT !!! !!! !!! !!! |
+// ==============================
+menuDef {
+	name "voiceMenu"
+	fullScreen MENU_FALSE
+	visible MENU_FALSE
+	focusColor 0.1 0.6 1 1
+	rect 2 265 190 75
+itemDef {
+	name backer
+	textstyle 3
+	textscale 0.7
+	rect 0 0 190 86
+	border 1
+	style WINDOW_STYLE_FILLED
+	background "ui/assets/sbar"
+	bordercolor   0.25 0.25 0.25 0.7
+	forecolor     1   0.5   0.01   1
+	backcolor     0.0 0.0 0.0 0.5
+	outlinecolor  1   0.5   0.01   0.3
+	decoration
+	visible 1
+	}
+itemDef {
+	name head
+	rect 4 4 64 64
+	visible 1
+	decoration
+	ownerdraw CG_VOICE_HEAD
+	}
+itemDef {
+	name headname
+	rect 4 67 64 8
+	visible 1
+	decoration
+	ownerdraw CG_VOICE_NAME
+	textstyle 6
+	textscale .20
+	textalign 0		
+	textalignx 0	
+	textaligny 10    
+	}
+	}
+
+}

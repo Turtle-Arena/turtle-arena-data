@@ -1,0 +1,29 @@
+//custom surfaceParms file (for 'q3map2 -meta -custinfoparms name.map')
+
+//custom CONTENTS_ flags
+{
+  freeSlot1  0x2
+  freeSlot2  0x4
+  shootable  0x0400
+  freeSlot3  0x1000
+  freeSlot4  0x2000
+  freeSlot5  0x4000
+}
+
+//custom SURF_ flags
+{
+  dirt    0x80000
+  grass   0x100000
+  wood    0x200000
+  stone   0x400000
+  sparks  0x800000
+  glass   0x1000000
+  metal   0x2000000
+  free2   0x4000000
+  free3   0x8000000
+  free4   0x10000000
+  free5   0x20000000
+  free6   0x40000000
+  free7   0x80000000
+}
+

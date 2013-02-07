@@ -1,0 +1,5 @@
+The .wings files are the origanal models, "_small" Md3s were exported from Wings3D to .obj/.mtl,
+the skin files names were changed in the .mtl, the .obj/.mtl files were converted
+to MD3 using Misfit Model 3D. The MD3_PATH was changed in MM3d.
+
+The MD3s that aren't "_small" MD3s were scaled to "2.0" in Misfit Model 3D.

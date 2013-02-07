@@ -1,0 +1,316 @@
+//
+// Health items
+//
+
+item item_health_small
+{
+	pickupSound "sound/items/s_health.wav"
+	model "models/powerups/health/small.md3"
+	iconName "icons/iconh_small"
+	pickupName "5% Health"
+	quantity 5
+	type IT_HEALTH
+}
+
+item item_health
+{
+	pickupSound "sound/items/n_health.wav"
+	model "models/powerups/health/medium.md3"
+	iconName "icons/iconh_medium"
+	pickupName "25% Health"
+	quantity 25
+	type IT_HEALTH
+}
+
+item item_health_large
+{
+	pickupSound "sound/items/l_health.wav"
+	model "models/powerups/health/large.md3"
+	iconName "icons/iconh_large"
+	pickupName "50% Health"
+	quantity 50
+	type IT_HEALTH
+}
+
+item item_health_mega
+{
+	pickupSound "sound/items/m_health.wav"
+	model "models/powerups/health/mega.md3"
+	iconName "icons/iconh_mega"
+	pickupName "100% Health"
+	quantity 100
+	type IT_HEALTH
+}
+
+
+//
+// Holdable items
+//
+
+item holdable_medkit
+{
+	pickupSound "sound/items/holdable.wav"
+	model "models/powerups/holdable/medkit.md3"
+	iconName "icons/medkit"
+	pickupName "Pizza-to-Go"
+	quantity 0 // 0 means hold only one, no matter how many are picked up
+	type IT_HOLDABLE
+	tag HI_MEDKIT
+	sounds "sound/items/use_medkit.wav"
+}
+
+item holdable_shuriken
+{
+	pickupSound "sound/items/holdable.wav"
+	model "models/powerups/holdable/shuriken.md3"
+	iconName "icons/shuriken"
+	pickupName "Shurikens"
+	quantity 10
+	type IT_HOLDABLE
+	tag HI_SHURIKEN
+}
+
+item holdable_shurikenelectric
+{
+	pickupSound "sound/items/holdable.wav"
+	model "models/powerups/holdable/shurikenelectric.md3"
+	iconName "icons/shurikenelectric"
+	pickupName "Electric Shurikens"
+	quantity 10
+	type IT_HOLDABLE
+	tag HI_ELECTRICSHURIKEN
+}
+
+item holdable_shurikenfire
+{
+	pickupSound "sound/items/holdable.wav"
+	model "models/powerups/holdable/shurikenfire.md3"
+	iconName "icons/shurikenfire"
+	pickupName "Fire Shurikens"
+	quantity 10
+	type IT_HOLDABLE
+	tag HI_FIRESHURIKEN
+}
+
+item holdable_shurikenlaser
+{
+	pickupSound "sound/items/holdable.wav"
+	model "models/powerups/holdable/shurikenlaser.md3"
+	iconName "icons/shurikenlaser"
+	pickupName "Laser Shurikens"
+	quantity 10
+	type IT_HOLDABLE
+	tag HI_LASERSHURIKEN
+}
+
+item holdable_portal
+{
+	pickupSound "sound/items/holdable.wav"
+	model "models/powerups/holdable/porter.md3"
+	iconName "icons/portal"
+	pickupName "Portal"
+	quantity 0
+	type IT_HOLDABLE
+	tag HI_PORTAL
+}
+
+
+//
+// Powerup items
+//
+
+item item_strength
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/instant/strength.md3"
+	iconName "icons/strength"
+	pickupName "Increased Strength"
+	quantity 30
+	type IT_POWERUP
+	tag PW_QUAD
+	sounds "sound/items/damage2.wav sound/items/damage3.wav"
+}
+
+item item_defense
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/instant/defense.md3"
+	iconName "icons/defense"
+	pickupName "Increased Defense"
+	quantity 30
+	type IT_POWERUP
+	tag PW_BATTLESUIT
+	sounds "sound/items/airout.wav sound/items/protect3.wav"
+}
+
+item item_speed
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/instant/speed.md3"
+	iconName "icons/speed"
+	pickupName "Increased Speed"
+	quantity 30
+	type IT_POWERUP
+	tag PW_HASTE
+}
+
+item item_invis
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/instant/invis.md3"
+	iconName "icons/invis"
+	pickupName "Invisibility"
+	quantity 30
+	type IT_POWERUP
+	tag PW_INVIS
+}
+
+item item_flight
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/instant/flight.md3"
+	iconName "icons/flight"
+	pickupName "Flight"
+	quantity 120
+	type IT_POWERUP
+	tag PW_FLIGHT
+	sounds "sound/items/flight.wav"
+}
+
+item item_invul
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/instant/invul.md3"
+	iconName "icons/invul"
+	pickupName "Invulnerability"
+	quantity 30
+	type IT_POWERUP
+	tag PW_INVUL
+
+}
+
+item team_CTF_redflag
+{
+	model0 "models/flag2/flagpole.md3"
+	model1 "models/flag2/flagflap3.md3"
+	iconName "icons/iconf_red1"
+	pickupName "Red Flag"
+	quantity 0
+	type IT_TEAM
+	tag PW_REDFLAG
+	skin "models/flag2/red.skin"
+}
+
+item team_CTF_blueflag
+{
+	model0 "models/flag2/flagpole.md3"
+	model1 "models/flag2/flagflap3.md3"
+	iconName "icons/iconf_blu1"
+	pickupName "Blue Flag"
+	quantity 0
+	type IT_TEAM
+	tag PW_BLUEFLAG
+	skin "models/flag2/blue.skin"
+}
+
+item team_CTF_neutralflag
+{
+	model0 "models/flag2/flagpole.md3"
+	model1 "models/flag2/flagflap3.md3"
+	iconName "icons/iconf_neutral1"
+	pickupName "Neutral Flag"
+	quantity 0
+	type IT_TEAM
+	tag PW_NEUTRALFLAG
+	skin "models/flag2/white.skin"
+}
+
+//
+// Persistant powerup items
+//
+
+item item_scout
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/scout.md3"
+	iconName "icons/scout"
+	pickupName "Scout"
+	quantity 30
+	type IT_PERSISTANT_POWERUP
+	tag PW_SCOUT
+}
+
+item item_guard
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/guard.md3"
+	iconName "icons/guard"
+	pickupName "Guard"
+	quantity 30
+	type IT_PERSISTANT_POWERUP
+	tag PW_GUARD
+}
+
+item item_doubler
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/doubler.md3"
+	iconName "icons/doubler"
+	pickupName "Doubler"
+	quantity 30
+	type IT_PERSISTANT_POWERUP
+	tag PW_DOUBLER
+}
+
+item item_ammoregen
+{
+	pickupSound "sound/items/powerup_pickup.ogg"
+	model "models/powerups/ammo.md3"
+	iconName "icons/ammo_regen"
+	pickupName "Ammo Regen"
+	quantity 30
+	type IT_PERSISTANT_POWERUP
+	tag PW_AMMOREGEN
+}
+
+//
+// Default Weapon (others are defined in weaponinfo.txt, *.weap)
+//
+
+item weapon_default
+{
+	pickupSound "sound/misc/w_pkup.wav"
+	model "models/weapons2/default/default.md3"
+	iconName "icons/iconw_default"
+	pickupName "Default Weapon"
+	quantity 0
+	type IT_WEAPON
+	tag WP_DEFAULT
+}
+
+//
+// Items for NiGHTS mode
+//
+
+item item_star
+{
+	pickupSound "sound/misc/i_pkup.wav"
+	model "models/powerups/score/star.md3"
+	iconName "icons/iconi_star"
+	pickupName "Star"
+	quantity 10
+	type IT_SCORE
+	tag 1 // star
+}
+
+item item_sphere
+{
+	pickupSound "sound/misc/i_pkup.wav"
+	model "models/powerups/score/sphere.md3"
+	iconName "icons/iconi_sphere"
+	pickupName "Sphere"
+	quantity 10
+	type IT_SCORE
+	tag 2 // sphere
+}
+

@@ -1,0 +1,1081 @@
+// Turtle Arena weapon info
+
+// NOTE:
+//  Blade origin and tip are "forward, right, up" (Values of less then 0 are backward, left, down)
+//  Speed is range for instantDamage weapons (Lightning gun uses 768)
+
+// hitMarkName/impactMarkName (Quake3 uses the following, but any image/shader can be used)
+// 	cgs.media.bulletMarkShader = trap_R_RegisterShader( "gfx/damage/bullet_mrk" );
+//	cgs.media.burnMarkShader = trap_R_RegisterShader( "gfx/damage/burn_med_mrk" );
+//	cgs.media.holeMarkShader = trap_R_RegisterShader( "gfx/damage/hole_lg_mrk" );
+//       hole is used by grappling hook and all melee weapons...
+//	cgs.media.energyMarkShader = trap_R_RegisterShader( "gfx/damage/plasma_mrk" );
+//  	Hammer mark - gfx/damage/hammer_mrk
+// ZTM: TODO:
+//  New melee weapon with blade		gfx/damage/melee_mrk_sharp
+//  New non-bladed (Bo, and whatever)  gfx/damage/melee_mrk_dull
+
+//  mod and splashMod are not used as the game will now use the p_text and w_text names
+//        skipping the first two characters ( the p_ or w_ )
+
+//
+// Fists (Untested and unfinished)
+//
+
+weapon "w_fist"
+{
+	weapontype WT_MELEE
+	//model ""
+	//mod MOD_FIST
+	attackDelay 400
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 12
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade
+	{
+		damage 10
+		origin 0 -5 0
+		tip 0 5 0
+		trailStyle default
+	}
+}
+
+weapongroup "wp_fists"
+{
+	randomSpawn 0 // Don't want this in weapon_random entity...
+	itemName "weapon_fists"
+	pickupName "Fists"
+	pickupModel "models/weapons2/fists/fists.md3"
+	iconName "icons/iconw_fists"
+	weapon_primary "w_fist"
+	weapon_secondary "w_fist"
+
+	// Same as "wp_sais"
+	normalAnims
+	{
+		standAnim "TORSO_STAND_SAI2"
+		attackAnim1 "TORSO_ATTACK_SAI2_A"
+		attackAnim2 "TORSO_ATTACK_SAI2_B"
+		attackAnim3 "TORSO_ATTACK_SAI2_A"
+		attackAnim4 "TORSO_ATTACK_SAI2_C"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_SAI1_PRIMARY"
+		attackAnim1 "TORSO_ATTACK_SAI1_PRIMARY_A"
+		attackAnim2 "TORSO_ATTACK_SAI1_PRIMARY_B"
+		attackAnim3 "TORSO_ATTACK_SAI1_PRIMARY_A"
+		attackAnim4 "TORSO_ATTACK_SAI1_PRIMARY_C"
+	}
+}
+
+//
+// Leo's Katanas (ninjaken)
+//
+// ...Leo's Katanas are 'Katanas' in name only.
+// Real Katanas are curved (by the way they are made), Leo's are straight.
+//
+
+weapon "w_straight katana"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/katana_leo/katana_leo.md3"
+	//mod MOD_KATANA
+	attackDelay 1500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 4
+	cuts 1
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade 0
+	{
+		damage 10
+		origin 0 0 0
+		tip 0 0 43
+		trailStyle default
+	}
+}
+
+weapongroup "wp_katanas"
+{
+	itemName "weapon_katanas"
+	pickupName "Katanas"
+	pickupModel "models/weapons2/katana_leo/katanas_pickup.md3"
+	iconName "icons/iconw_katanas"
+	weapon_primary "w_straight katana"
+	weapon_secondary "w_straight katana"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_SWORD2"
+		attackAnim1 "TORSO_ATTACK_SWORD2_A"
+		attackAnim2 "TORSO_ATTACK_SWORD2_B"
+		attackAnim3 "TORSO_ATTACK_SWORD2_A"
+		attackAnim4 "TORSO_ATTACK_SWORD2_C"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_SWORD1_PRIMARY"
+		attackAnim1 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+		attackAnim2 "TORSO_ATTACK_SWORD1_PRIMARY_B"
+		attackAnim3 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+		attackAnim4 "TORSO_ATTACK_SWORD1_PRIMARY_C"
+	}
+}
+
+//
+// Daisho (For Usagi)
+//
+
+weapon "w_wakizashi"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/wakizashi/wakizashi.md3"
+	//mod MOD_WAKIZASHI
+	attackDelay 1500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 2
+	cuts 1
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade 0
+	{
+		damage 10
+		origin 0 0 0
+		tip -3 0 20 // curves backward a little
+		trailStyle default
+	}
+}
+
+// Real Katana
+weapon "w_katana"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/katana/katana.md3"
+	//mod MOD_KATANA
+	attackDelay 1500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 4
+	cuts 1
+
+	blade 0
+	{
+		damage 10
+		origin 0 0 0
+		tip -6 0 40
+		trailStyle default
+	}
+}
+
+weapongroup "wp_daisho"
+{
+	randomSpawn 0 // ZTM: FIXME: Missing models
+	itemName "weapon_daisho"
+	pickupName "Daisho"
+	pickupModel "models/weapons2/daisho/daisho_pickup.md3"
+	iconName "icons/iconw_daisho"
+	weapon_primary "w_katana"
+	weapon_secondary "w_wakizashi"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_DAISHO"
+		attackAnim1 "TORSO_ATTACK_DAISHO_A"
+		attackAnim2 "TORSO_ATTACK_DAISHO_B"
+		attackAnim3 "TORSO_ATTACK_DAISHO_A"
+		attackAnim4 "TORSO_ATTACK_DAISHO_C"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_SWORD1_PRIMARY"
+		attackAnim1 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+		attackAnim2 "TORSO_ATTACK_SWORD1_PRIMARY_B"
+		attackAnim3 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+		attackAnim4 "TORSO_ATTACK_SWORD1_PRIMARY_C"
+	}
+}
+
+
+//
+// Sai-type weapons
+//
+
+//weapongroup "wt_sais"
+//{
+//	normalAnims
+//	{
+//		standAnim "TORSO_STAND_SAI2"
+//		attackAnim1 "TORSO_ATTACK_SAI2_A"
+//		attackAnim2 "TORSO_ATTACK_SAI2_B"
+//		attackAnim3 "TORSO_ATTACK_SAI2_A"
+//		attackAnim4 "TORSO_ATTACK_SAI2_C"
+//	}
+//	primaryAnims
+//	{
+//		standAnim "TORSO_STAND_SAI1_PRIMARY"
+//		attackAnim1 "TORSO_ATTACK_SAI1_PRIMARY_A"
+//		attackAnim2 "TORSO_ATTACK_SAI1_PRIMARY_B"
+//		attackAnim3 "TORSO_ATTACK_SAI1_PRIMARY_A"
+//		attackAnim4 "TORSO_ATTACK_SAI1_PRIMARY_C"
+//	}
+//}
+
+weapon "w_sai"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/sai/sai.md3"
+	//mod MOD_SAI
+	attackDelay 1500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 4
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade 0
+	{
+		damage 8
+		origin 0 0 0
+		tip 0 0 16
+		trailStyle default
+	}
+	// I have these mostly for impact marks.
+	blade 1
+	{
+		damage 1
+		origin 0 3 0
+		tip 0 3 4
+		trailStyle default
+	}
+	blade 2
+	{
+		damage 1
+		origin 0 -3 0
+		tip 0 -3 4
+		trailStyle default
+	}
+}
+
+weapongroup "wp_sais"
+{
+	clone "wt_sais"
+	itemName "weapon_sais"
+	pickupName "Sais"
+	pickupModel "models/weapons2/sai/sais_pickup.md3"
+	iconName "icons/iconw_sais"
+	weapon_primary "w_sai"
+	weapon_secondary "w_sai"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_SAI2"
+		attackAnim1 "TORSO_ATTACK_SAI2_A"
+		attackAnim2 "TORSO_ATTACK_SAI2_B"
+		attackAnim3 "TORSO_ATTACK_SAI2_A"
+		attackAnim4 "TORSO_ATTACK_SAI2_C"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_SAI1_PRIMARY"
+		attackAnim1 "TORSO_ATTACK_SAI1_PRIMARY_A"
+		attackAnim2 "TORSO_ATTACK_SAI1_PRIMARY_B"
+		attackAnim3 "TORSO_ATTACK_SAI1_PRIMARY_A"
+		attackAnim4 "TORSO_ATTACK_SAI1_PRIMARY_C"
+	}
+}
+
+
+//
+// Nunchuck-type weapons
+//
+
+//weapongroup "wt_nunchucks"
+//{
+//	normalAnims
+//	{
+//		standAnim "TORSO_STAND_NUNCHUCKS"
+//		attackAnim1 "TORSO_ATTACK_NUNCHUCKS_A"
+//		attackAnim2 "TORSO_ATTACK_NUNCHUCKS_B"
+//		attackAnim3 "TORSO_ATTACK_NUNCHUCKS_A"
+//		attackAnim4 "TORSO_ATTACK_NUNCHUCKS_C"
+//	}
+//	primaryAnims
+//	{
+//		standAnim "TORSO_STAND_NUNCHUCKS1_PRIMARY"
+//		attackAnim1 "TORSO_ATTACK_NUNCHUCKS1_PRIMARY_A"
+//		attackAnim2 "TORSO_ATTACK_NUNCHUCKS1_PRIMARY_B"
+//		attackAnim3 "TORSO_ATTACK_NUNCHUCKS1_PRIMARY_A"
+//		attackAnim4 "TORSO_ATTACK_NUNCHUCKS1_PRIMARY_C"
+//	}
+//}
+
+weapon "w_nunchuck"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/nunchuck/nunchuck.md3"
+	//mod MOD_NUNCHUCK
+	attackDelay 1500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 4
+	barrelSpin BS_YAW
+	barrelIdleUseGravity 1
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	// Currently cannot do damage based on location of barrel,
+	//  so attack all around...
+	// up
+	blade 0
+	{
+		damage 1
+		origin 0 0 0
+		tip 0 0 8
+		trailStyle none
+	}
+	// forward
+	blade 1
+	{
+		damage 3
+		origin 0 0 8
+		tip 0 12 8
+		trailStyle default
+	}
+	// left
+	blade 2
+	{
+		damage 3
+		origin 0 0 8
+		tip 12 0 8
+		trailStyle default
+	}
+	// right
+	blade 3
+	{
+		damage 3
+		origin 0 0 8
+		tip -12 0 8
+		trailStyle default
+	}
+	// back
+	blade 4
+	{
+		damage 3
+		origin 0 0 8
+		tip 0 -12 8
+		trailStyle default
+	}
+}
+
+weapongroup "wp_nunchucks"
+{
+	clone "wt_nunchucks"
+	itemName "weapon_nunchucks"
+	pickupName "Nunchucks"
+	pickupModel "models/weapons2/nunchuck/nunchucks_pickup.md3"
+	iconName "icons/iconw_nunchucks"
+	weapon_primary "w_nunchuck"
+	weapon_secondary "w_nunchuck"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_NUNCHUCKS"
+		attackAnim1 "TORSO_ATTACK_NUNCHUCKS_A"
+		attackAnim2 "TORSO_ATTACK_NUNCHUCKS_B"
+		attackAnim3 "TORSO_ATTACK_NUNCHUCKS_A"
+		attackAnim4 "TORSO_ATTACK_NUNCHUCKS_C"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_NUNCHUCKS1_PRIMARY"
+		attackAnim1 "TORSO_ATTACK_NUNCHUCKS1_PRIMARY_A"
+		attackAnim2 "TORSO_ATTACK_NUNCHUCKS1_PRIMARY_B"
+		attackAnim3 "TORSO_ATTACK_NUNCHUCKS1_PRIMARY_A"
+		attackAnim4 "TORSO_ATTACK_NUNCHUCKS1_PRIMARY_C"
+	}
+}
+
+
+//
+// Hammer-type weapons
+//
+
+//weapongroup "wt_hammer"
+//{
+//	normalAnims
+//	{
+//		standAnim "TORSO_STAND_HAMMER"
+//		attackAnim "TORSO_ATTACK_HAMMER_A"
+//	}
+//	primaryAnims
+//	{
+//		standAnim "TORSO_STAND_HAMMER_PRIMARY"
+//		attackAnim "TORSO_ATTACK_HAMMER_PRIMARY_A"
+//	}
+//}
+
+weapon "w_hammer"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/hammer/hammer.md3"
+	//mod MOD_HAMMER
+	attackDelay 2500
+	impactMarkName "gfx/damage/hammer_mrk"
+	impactMarkRadius 8
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade 0
+	{
+		damage 10
+		origin 0 0 0
+		tip 0 0 20
+		trailStyle default
+	}
+}
+
+weapongroup "wp_hammer"
+{
+	clone "wt_hammer"
+	itemName "weapon_hammer"
+	pickupName "Hammer"
+	pickupModel "models/weapons2/hammer/hammer.md3"
+	iconName "icons/iconw_hammer"
+	weapon_primary "w_hammer"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_HAMMER"
+		attackAnim "TORSO_ATTACK_HAMMER_A"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_HAMMER_PRIMARY"
+		attackAnim "TORSO_ATTACK_HAMMER_PRIMARY_A"
+	}
+}
+
+weapon "w_axe"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/axe/axe.md3"
+	//mod MOD_AXE
+	attackDelay 2500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 12
+	cuts 1
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade 0
+	{
+		damage 10
+		origin 0 0 0
+		tip 0 0 20
+		trailStyle default
+	}
+}
+
+weapongroup "wp_axe"
+{
+	clone "wt_hammer"
+	itemName "weapon_axe"
+	pickupName "Battle Axe"
+	pickupModel "models/weapons2/axe/axe.md3"
+	iconName "icons/iconw_axe"
+	weapon_primary "w_axe"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_HAMMER"
+		attackAnim "TORSO_ATTACK_HAMMER_A"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_HAMMER_PRIMARY"
+		attackAnim "TORSO_ATTACK_HAMMER_PRIMARY_A"
+	}
+}
+
+
+//
+// Sword1-type weapons
+//
+
+//weapongroup "wt_sword1_both"
+//{
+//	normalAnims
+//	{
+//		standAnim "TORSO_STAND_SWORD1_BOTH"
+//		attackAnim1 "TORSO_ATTACK_SWORD1_BOTH_A"
+//		attackAnim2 "TORSO_ATTACK_SWORD1_BOTH_B"
+//		attackAnim3 "TORSO_ATTACK_SWORD1_BOTH_A"
+//		attackAnim4 "TORSO_ATTACK_SWORD1_BOTH_C"
+//	}
+//	primaryAnims
+//	{
+//		standAnim "TORSO_STAND_SWORD1_PRIMARY"
+//		attackAnim1 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+//		attackAnim2 "TORSO_ATTACK_SWORD1_PRIMARY_B"
+//		attackAnim3 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+//		attackAnim4 "TORSO_ATTACK_SWORD1_PRIMARY_C"
+//	}
+//}
+
+weapon "w_long sword"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/longsword/longsword.md3"
+	//mod MOD_SWORD
+	attackDelay 1500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 4
+	cuts 1
+	//alwaysDamage 1 // ZTM: This doesn't work well with the player animations.
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade 0
+	{
+		damage 10
+		origin 0 0 0
+		tip 0 0 38
+		trailStyle default
+	}
+}
+
+weapongroup "wp_longsword"
+{
+	clone "wt_sword1_both"
+	itemName "weapon_longsword"
+	pickupName "Long Sword"
+	pickupModel "models/weapons2/longsword/longsword.md3"
+	iconName "icons/iconw_longsword"
+	weapon_primary "w_long sword"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_SWORD1_BOTH"
+		attackAnim1 "TORSO_ATTACK_SWORD1_BOTH_A"
+		attackAnim2 "TORSO_ATTACK_SWORD1_BOTH_B"
+		attackAnim3 "TORSO_ATTACK_SWORD1_BOTH_A"
+		attackAnim4 "TORSO_ATTACK_SWORD1_BOTH_C"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_SWORD1_PRIMARY"
+		attackAnim1 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+		attackAnim2 "TORSO_ATTACK_SWORD1_PRIMARY_B"
+		attackAnim3 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+		attackAnim4 "TORSO_ATTACK_SWORD1_PRIMARY_C"
+	}
+}
+
+weapon "w_bat"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/bat/bat.md3"
+	//mod MOD_BAT
+	attackDelay 1500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 8
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade 0
+	{
+		damage 10
+		origin 0 0 0
+		tip 0 0 21
+		trailStyle default
+	}
+}
+
+weapongroup "wp_bat"
+{
+	clone "wt_sword1_both"
+	itemName "weapon_bat"
+	pickupName "Baseball Bat"
+	pickupModel "models/weapons2/bat/bat_pickup.md3"
+	iconName "icons/iconw_bat"
+	weapon_primary "w_bat"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_SWORD1_BOTH"
+		attackAnim1 "TORSO_ATTACK_SWORD1_BOTH_A"
+		attackAnim2 "TORSO_ATTACK_SWORD1_BOTH_B"
+		attackAnim3 "TORSO_ATTACK_SWORD1_BOTH_A"
+		attackAnim4 "TORSO_ATTACK_SWORD1_BOTH_C"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_SWORD1_PRIMARY"
+		attackAnim1 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+		attackAnim2 "TORSO_ATTACK_SWORD1_PRIMARY_B"
+		attackAnim3 "TORSO_ATTACK_SWORD1_PRIMARY_A"
+		attackAnim4 "TORSO_ATTACK_SWORD1_PRIMARY_C"
+	}
+}
+
+//
+// Bo-type weapons
+//
+
+//weapongroup "wt_bo"
+//{
+//	normalAnims
+//	{
+//		standAnim "TORSO_STAND_BO"
+//		attackAnim1 "TORSO_ATTACK_BO_A"
+//		attackAnim2 "TORSO_ATTACK_BO_B"
+//		attackAnim3 "TORSO_ATTACK_BO_A"
+//		attackAnim4 "TORSO_ATTACK_BO_C"
+//	}
+//	primaryAnims
+//	{
+//		standAnim "TORSO_STAND_BO_PRIMARY"
+//		attackAnim1 "TORSO_ATTACK_BO_PRIMARY_A"
+//		attackAnim2 "TORSO_ATTACK_BO_PRIMARY_B"
+//		attackAnim3 "TORSO_ATTACK_BO_PRIMARY_A"
+//		attackAnim4 "TORSO_ATTACK_BO_PRIMARY_C"
+//	}
+//}
+
+weapon "w_bo"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/bo/bo.md3"
+	//mod MOD_BO
+	attackDelay 1500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 8
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade 0
+	{
+		damage 10
+		origin 0 0 0
+		tip 0 0 37
+		trailStyle default
+	}
+	blade 1
+	{
+		damage 10
+		origin 0 0 0
+		tip 0 0 -37
+		trailStyle default
+	}
+}
+
+weapongroup "wp_bo"
+{
+	clone "wt_bo"
+	itemName "weapon_bo"
+	pickupName "Bo Staff"
+	pickupModel "models/weapons2/bo/bo_pickup.md3"
+	iconName "icons/iconw_bo"
+	weapon_primary "w_bo"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_BO"
+		attackAnim1 "TORSO_ATTACK_BO_A"
+		attackAnim2 "TORSO_ATTACK_BO_B"
+		attackAnim3 "TORSO_ATTACK_BO_A"
+		attackAnim4 "TORSO_ATTACK_BO_C"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_BO_PRIMARY"
+		attackAnim1 "TORSO_ATTACK_BO_PRIMARY_A"
+		attackAnim2 "TORSO_ATTACK_BO_PRIMARY_B"
+		attackAnim3 "TORSO_ATTACK_BO_PRIMARY_A"
+		attackAnim4 "TORSO_ATTACK_BO_PRIMARY_C"
+	}
+}
+
+weapon "w_bamboo"
+{
+	weapontype WT_MELEE
+	model "models/weapons2/bamboo/bamboo.md3"
+	//mod MOD_BAMBOO
+	attackDelay 1500
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 8
+
+	flashSound0 "sound/weapons/melee_swing.wav" // TEST
+
+	blade 0
+	{
+		damage 10
+		origin 0 0 0
+		tip 0 0 48
+		trailStyle default
+	}
+	blade 1
+	{
+		damage 10
+		origin 0 0 0
+		tip 0 0 -48
+		trailStyle default
+	}
+}
+
+weapongroup "wp_bamboo"
+{
+	clone "wt_bo"
+	itemName "weapon_bamboo"
+	pickupName "Bamboo"
+	pickupModel "models/weapons2/bamboo/bamboo_pickup.md3"
+	iconName "icons/iconw_bamboo"
+	weapon_primary "w_bamboo"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_BO"
+		attackAnim1 "TORSO_ATTACK_BO_A"
+		attackAnim2 "TORSO_ATTACK_BO_B"
+		attackAnim3 "TORSO_ATTACK_BO_A"
+		attackAnim4 "TORSO_ATTACK_BO_C"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_BO_PRIMARY"
+		attackAnim1 "TORSO_ATTACK_BO_PRIMARY_A"
+		attackAnim2 "TORSO_ATTACK_BO_PRIMARY_B"
+		attackAnim3 "TORSO_ATTACK_BO_PRIMARY_A"
+		attackAnim4 "TORSO_ATTACK_BO_PRIMARY_C"
+	}
+}
+
+
+//
+// Gun-type weapons
+//
+
+//weapongroup "wt_gun"
+//{
+//	normalAnims
+//	{
+//		standAnim "TORSO_STAND_GUN"
+//		attackAnim "TORSO_ATTACK_GUN"
+//	}
+//	primaryAnims
+//	{
+//		standAnim "TORSO_STAND_GUN_PRIMARY"
+//		attackAnim "TORSO_ATTACK_GUN_PRIMARY"
+//	}
+//}
+
+projectile "p_pulse"
+{
+	//model "models/ammo/pulse/pulse.md3"
+	damage 10
+	speed 100
+	//timetolive 10000
+	//trailType PT_BULLET
+	deathType PD_BULLET_COLORIZE
+	hitMarkName "gfx/damage/bullet_mrk"
+	hitMarkRadius 8
+	//spread 200
+
+	instantDamage 1
+	trailType PT_RAIL
+	speed 768 // range
+	trailTime 200
+}
+
+weapon "w_triblaster"
+{
+	weapontype "WT_GUN"
+	model "models/weapons2/triblaster/triblaster.md3"
+	attackDelay 400
+	continuousFlash 1
+	flashColor color1 // 0.8 0 1 // cc00ff
+	//flashSound0 "sound/weapons/triblaster/fire.wav"
+	projectile "p_pulse"
+}
+
+weapongroup "wp_triblaster"
+{
+	clone "wt_gun"
+	itemName "weapon_gun"
+	pickupName "Tri-Blaster"
+	pickupModel "models/weapons2/triblaster/triblaster.md3"
+	iconName "icons/iconw_triblaster"
+	pickupAmmo 50
+	weapon_primary "w_triblaster"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_GUN"
+		attackAnim "TORSO_ATTACK_GUN"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_GUN_PRIMARY"
+		attackAnim "TORSO_ATTACK_GUN_PRIMARY"
+	}
+}
+
+projectile "p_energy ball"
+{
+	sprite "sprites/plasma1"
+	spriteRadius 16
+	damage 20
+	splashDamage 15
+	splashRadius 20
+	speed 2000
+	timetolive 10000
+	trailType PT_PLASMA
+	deathType PD_PLASMA
+	missileSound "sound/weapons/plasma/lasfly.wav"
+	hitMarkName "gfx/damage/plasma_mrk"
+	hitMarkRadius 16
+	hitMarkFadeAlpha 1
+}
+
+weapon "w_electric_launcher"
+{
+	weapontype WT_GUN
+	model "models/weapons2/electricl/electricl.md3"
+	//mod MOD_ELECTRIC
+	attackDelay 100
+	//splashMod MOD_ELECTRIC_SPLASH
+	flashColor 0.6 0.6 1.0
+	flashSound0 "sound/weapons/plasma/hyprbf1a.wav"
+	projectile "p_energy ball"
+}
+
+weapongroup "wp_electric_launcher"
+{
+	clone "wt_gun"
+	itemName "weapon_electriclauncher"
+	pickupName "Electric Launcher"
+	pickupModel "models/weapons2/electricl/electricl.md3"
+	iconName "icons/iconw_electric"
+	pickupAmmo 40 // In Q3 it is 50
+	weapon_primary "w_electric_launcher"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_GUN"
+		attackAnim "TORSO_ATTACK_GUN"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_GUN_PRIMARY"
+		attackAnim "TORSO_ATTACK_GUN_PRIMARY"
+	}
+}
+
+projectile "p_rocket"
+{
+	model "models/ammo/rocket/rocket.md3"
+	damage 50
+	splashDamage 50
+	splashRadius 120
+	speed 900
+	timetolive 15000
+	shootable 1
+	trailType PT_ROCKET
+	deathType PD_ROCKET
+	missileSound "sound/weapons/rocket/rockfly.wav"
+	missileDlight 200
+	missileDlightColor 1 .75 0
+	hitMarkName "gfx/damage/burn_med_mrk"
+	hitMarkRadius 64
+}
+
+weapon "w_rocket_launcher"
+{
+	weapontype WT_GUN
+	model "models/weapons2/rocketl/rocketl.md3"
+	//mod MOD_ROCKET
+	attackDelay 800
+	ejectSmoke 1
+	//splashMod MOD_ROCKET_SPLASH
+	flashColor 1 0.75 0
+	flashSound0 "sound/weapons/rocket/rocklf1a.wav"
+	projectile "p_rocket"
+}
+
+weapongroup "wp_rocket_launcher"
+{
+	clone "wt_gun"
+	itemName "weapon_rocketlauncher"
+	pickupName "Rocket Launcher"
+	pickupModel "models/weapons2/rocketl/rocketl.md3"
+	iconName "icons/iconw_rocket"
+	pickupAmmo 10
+	weapon_primary "w_rocket_launcher"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_GUN"
+		attackAnim "TORSO_ATTACK_GUN"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_GUN_PRIMARY"
+		attackAnim "TORSO_ATTACK_GUN_PRIMARY"
+	}
+}
+
+projectile "p_homing rocket"
+{
+	model "models/ammo/rocket/rocket.md3"
+	damage 25
+	splashDamage 25
+	splashRadius 60
+	speed 450
+	timetolive 15000
+	shootable 1
+	trailType PT_GRENADE
+	deathType PD_ROCKET_SMALL
+	missileSound "sound/weapons/rocket/rockfly.wav"
+	missileDlight 100
+	missileDlightColor 1 .75 0
+	hitMarkName "gfx/damage/burn_med_mrk"
+	hitMarkRadius 32
+	homing 600
+}
+
+weapon "w_homing_launcher"
+{
+	weapontype WT_GUN
+	model "models/weapons2/homingl/homingl.md3"
+	//mod MOD_HOMING
+	attackDelay 900
+	ejectSmoke 1
+	//splashMod MOD_HOMING_SPLASH
+	flashColor 1 0.75 0
+	flashSound0 "sound/weapons/homingl/hominglf1a.wav"
+	projectile "p_homing rocket"
+}
+
+weapongroup "wp_homing_launcher"
+{
+	clone "wt_gun"
+	itemName "weapon_hominglauncher"
+	pickupName "Homing Rocket Launcher"
+	pickupModel "models/weapons2/homingl/homingl.md3"
+	iconName "icons/iconw_homing"
+	pickupAmmo 5
+	weapon_primary "w_homing_launcher"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_GUN"
+		attackAnim "TORSO_ATTACK_GUN"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_GUN_PRIMARY"
+		attackAnim "TORSO_ATTACK_GUN_PRIMARY"
+	}
+}
+
+projectile "p_grappling hook"
+{
+	// model "models/weapons2/grapple/claw.md3"
+	model "models/ammo/rocket/rocket.md3"
+	damage 10
+	speed 800
+	timetolive 10000
+	trailType "PT_GRAPPLE"
+	deathType "PD_BULLET"
+	hitMarkName "gfx/damage/hole_lg_mrk"
+	hitMarkRadius 12
+	grappling 1
+	spinType "PS_NONE"
+}
+
+weapon "w_grappling_hook"
+{
+	weapontype WT_GUN
+	model "models/weapons2/grapple/grapple.md3"
+	//mod MOD_GRAPPLE
+	attackDelay 400
+	continuousFlash 1 // update chain position
+	ejectSmoke 1
+	flashColor 0 0 0 // no flash
+	flashSound0 "sound/weapons/grapple/grapplef1a.wav"
+	projectile "p_grappling hook"
+}
+
+weapongroup "wp_grappling_hook"
+{
+	clone "wt_gun"
+	randomSpawn 0
+	itemName "weapon_grapplinghook"
+	pickupName "Grappling Hook"
+	pickupModel "models/weapons2/grapple/grapple.md3"
+	iconName "icons/iconw_grapple"
+	//pickupAmmo 1		// grappling projectiles use no ammo.
+	readySound "sound/weapons/grapple/grappleready.ogg"
+	//firingSound "sound/weapons/melee/fstrun.wav"
+	weapon_primary "w_grappling_hook"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_GUN"
+		attackAnim "TORSO_ATTACK_GUN"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_GUN_PRIMARY"
+		attackAnim "TORSO_ATTACK_GUN_PRIMARY"
+	}
+}
+
+// ZTM: TODO: Fall out of air after time to live.
+projectile "p_dart"
+{
+	model "models/ammo/rocket/rocket.md3"
+	damage 10
+	speed 500
+	timetolive 10000
+	//shootable 1
+	stickOnImpact PSOI_ANGLE_180
+	//falltoground 1
+	spinType PS_ROLL
+}
+
+weapon "w_dartgun"
+{
+	weapontype WT_GUN
+	model "models/weapons2/gun/gun.md3"
+	//mod MOD_GUN
+	attackDelay 400
+	flashColor 0 0 0 // no flash
+	projectile "p_dart"
+}
+
+weapongroup "wp_dartgun"
+{
+	clone "wt_gun"
+	randomSpawn 0 // unfinished weapon
+	itemName "weapon_dartgun"
+	pickupName "Dart Gun"
+	pickupModel "models/weapons2/gun/gun.md3"
+	iconName "icons/iconw_dartgun"
+	pickupAmmo 20
+	weapon_primary "w_dartgun"
+
+	normalAnims
+	{
+		standAnim "TORSO_STAND_GUN"
+		attackAnim "TORSO_ATTACK_GUN"
+	}
+	primaryAnims
+	{
+		standAnim "TORSO_STAND_GUN_PRIMARY"
+		attackAnim "TORSO_ATTACK_GUN_PRIMARY"
+	}
+}
+

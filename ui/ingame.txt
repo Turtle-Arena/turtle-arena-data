@@ -1,0 +1,13 @@
+//
+// menu defs for ingame menus
+//
+{
+	loadMenu { "ui/in_main.menu" }
+	//loadMenu { "ui/in_controls.menu" }
+	//loadMenu { "ui/in_setup.menu" }
+	//loadMenu { "ui/in_load.menu" }
+	//loadMenu { "ui/in_save.menu" }
+
+	//loadMenu { "ui/in_driver.menu" }
+	//loadMenu { "ui/in_quit.menu" }
+}

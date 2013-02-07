@@ -1,0 +1,13 @@
+// Connect to server / start server background.
+#include "ui/menudef.h"
+
+{
+	menuDef
+	{
+		name "Connect"
+		background THEME_BACKGROUND
+		fullScreen MENU_TRUE
+		style WINDOW_STYLE_SHADER
+	}
+}
+

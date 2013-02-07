@@ -1,0 +1,241 @@
+// Turtle Arena
+// Ingame Main menu
+// Base on rfactory.org out_main.menu
+#include "ui/menudef.h"
+
+{
+	assetGlobalDef
+	{
+		font "fonts/font" 16
+		smallFont "fonts/smallfont" 12
+		bigFont "fonts/bigfont" 20
+		cursor "ui/assets/3_cursor3"
+		itemFocusSound "sound/misc/menu2.wav"
+
+		fadeClamp 1.0
+		fadeCycle 1
+		fadeAmount 0.1
+
+		shadowColor 0.1 0.1 0.1 0.25
+	}
+
+	menuDef
+	{
+		name "ingame"
+		rect 185 90 270 300
+		focusColor 1 0.43 0 1.25
+		popup
+
+		//onOpen
+		//{
+		//	playlooped "music/menu.wav" ;
+		//}
+
+		onESC
+		{
+			uiScript "closeingame"
+		}
+
+		//
+		// Background
+		//
+		itemDef
+		{
+			name background
+			rect 0 0 270 300
+			style WINDOW_STYLE_SHADER
+			background "ui/assets/inback.tga"
+			visible MENU_TRUE
+			decoration
+		}
+
+		itemDef 
+		{
+			name resumebutton
+			text "Resume Game"
+			type ITEM_TYPE_BUTTON
+			rect 70 12 130 24
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			action
+			{
+				uiScript "closeingame" ;
+			}
+		}
+
+		itemDef
+		{
+			name joinbutton
+			text "Join"
+			type ITEM_TYPE_BUTTON
+			rect 70 40 130 24
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			action
+			{
+				close ingame;
+				open instart
+			}
+		}
+
+		itemDef 
+		{
+			name botbutton
+			text "Add Bot"
+			type ITEM_TYPE_BUTTON
+			rect 70 68 130 24
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+			cvarTest "ui_singlePlayerActive"
+			disableCvar { "1" }
+			action
+			{
+				close ingame;
+				open inaddbot
+			}
+		}
+
+		itemDef 
+		{
+			name setupbutton
+			text "Setup"
+			type ITEM_TYPE_BUTTON
+			rect 70 96 130 24
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			action
+			{
+				close ingame;
+				open insetup;
+				open inplayer
+			}
+		}
+
+		itemDef
+		{
+			name controlbutton
+			text "Controls"
+			type ITEM_TYPE_BUTTON
+			rect 70 124 130 24
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			action
+			{
+				close "ingame";
+				open "incontrols";
+				open "inlook"
+			}
+		}
+
+		itemDef 
+		{
+			name infobutton
+			text "Server Info"
+			type ITEM_TYPE_BUTTON
+			rect 70 152 130 24
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			action
+			{
+				close "ingame";
+				open "inserverinfo"
+			}
+		}
+
+		itemDef 
+		{
+			name restartbutton
+			text "Restart Game"
+			type ITEM_TYPE_BUTTON
+			rect 70 180 130 24
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			action
+			{
+				exec "map_restart 0" ;
+				uiScript "closeingame" ;
+			}
+		}
+
+		itemDef 
+		{
+			name leavebutton
+			text "Leave Game"
+			type ITEM_TYPE_BUTTON
+			rect 70 208 130 24
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			action
+			{
+				uiScript "leave"
+			}
+		}
+
+		itemDef
+		{
+			name quitbutton
+			text "Quit"
+			type ITEM_TYPE_BUTTON
+			rect 70 236 130 24
+			textscale 0.33
+			textaligny 20
+			textalign ITEM_ALIGN_CENTER
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalignx 65
+			forecolor 0.9 0.9 0.9 1
+			visible MENU_TRUE
+
+			action
+			{
+				open "inquit"
+			}
+		}
+	}
+}

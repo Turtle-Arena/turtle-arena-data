@@ -1,44 +1,58 @@
+// Single Player
+
+// Stage 1
 {
-map			"q1dm1"
-longname	"Place of Two Deaths"
-type		"single ffa tourney team"
-special		"training"
-bots		"sarge"
+map			"sp1a1"
+longname	"Stage 1: Area 1"
+type		"single"
 }
 
 {
-map			"q1dm2"
-longname	"Claustrophobopolis"
-type		"single ffa tourney team"
-bots		"sarge sarge"
+map			"sp1boss"
+longname	"Stage 1: Boss"
+type		"single"
+bots		"FugiTurtle"
+//allies		"leo don mike"
+}
+
+// Special Stage keywords
+// special		"Training" (First level, in a Tier by its self)
+// special		"Final" (Last level, in a Tier by its self)
+//{
+//map			"sp0"
+//longname	"Introduction"
+//type		"single"
+//}
+
+//{
+//map			"sp6boss"
+//longname	"Final Battle"
+//type		"single tourney"
+//}
+
+// FFA-based maps (Free For All, Dual, and Team Deathmatch)
+{
+map			"dm1"
+longname	"Leaks"
+type		"ffa tourney team"
 }
 
 {
-map			"q1dm3"
-longname	"The Abandoned Base"
-type		"single ffa tourney team"
-bots		"sarge sarge sarge"
+map			"dm2"
+longname	"Space"
+type		"ffa tourney team"
+}
+
+// CTF-based maps (CTF, 1 flag CTF, and Overload)
+{
+map			"team1"
+longname	"Narrows"
+type		"ctf oneflag overload"
 }
 
 {
-map			"q1dm4"
-longname	"The Bad Place"
-type		"single ffa tourney team"
-bots		"sarge sarge sarge sarge"
-}
-
-{
-map			"q1dm5"
-longname	"The Cistern"
-type		"single ffa tourney team"
-bots		"sarge sarge sarge sarge sarge"
-}
-
-{
-map			"q1dm6"
-longname	"The Dark Zone"
-type		"single ffa tourney team"
-special		"final"
-bots		"sarge sarge sarge sarge sarge sarge"
+map			"subway"
+longname	"Subway"
+type		"ctf oneflag overload"
 }
 

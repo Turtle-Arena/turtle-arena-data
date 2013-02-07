@@ -68,6 +68,7 @@ models/powerups/ammo2.png
 models/powerups/doubler2.png
 models/powerups/guard2.png
 models/powerups/scout2.png
+textures/city/manhole_top.png
 textures/common/alpha000.png
 textures/common/alpha025.png
 textures/common/alpha050.png
@@ -76,6 +77,44 @@ textures/common/alpha085.png
 textures/common/alpha100.png
 textures/ctf2/blueteam01.png
 textures/ctf2/redteam01.png
+textures/fog/fogblack.png
+textures/fog/fogwhite.png
+
+Images that use M+ 1mn Regular:
+gfx/clientLoading.png
+gfx/clientLoading_low.png
+textures/tech/terminal.png
+textures/tech/terminal_editor.png
+
+== zero-project.gr ==
+The following is copyright (c) 2010 zero-project and is licensed under the
+	Creative Commons Attribution-ShareAlike 3.0 Unported.
+
+music/zero-project_-_Whispering_Wind.ogg
+		http://www.jamendo.com/en/track/682363
+
+== The Mulletz ==
+The following was released into the public domain in 2011 by Neil Crowe!
+
+music/NeilCrowe_-_EVENT.ogg
+		http://ccmixter.org/files/NeilCrowe/32301
+
+== OpenArena ==
+Some of the shaders in the scripts/*.shader files are from OpenArena.
+scripts/male1.voice is based on file from OpenArena.
+
+The following are based on files from OpenArena and are copyright (c) 2006 Bob Isaac and 2009-2013 Zack Middleton and are licensed under the GNU General Public License; either version 2 of the License, or (at your option) any later version.
+
+botfiles/bots/default_c.c
+botfiles/bots/default_t.c
+botfiles/bots/raph_c.c
+botfiles/bots/raph_t.c
+botfiles/fuzi.c
+botfiles/match.c
+botfiles/rchat.c
+botfiles/rnd.c
+botfiles/syn.c
+botfiles/teamplay.h
 
 == M+ Outline Fonts ==
 The following files are Copyright (C) 2002-2012 M+ FONTS PROJECT. See M+FONTS_LICENSE.txt for license.
@@ -85,4 +124,3 @@ fonts/mplus-1c-regular.ttf
 fonts/mplus-1c-bold.ttf
 fonts/mplus-1mn-regular.ttf
 fonts/mplus-2p-black.ttf
-

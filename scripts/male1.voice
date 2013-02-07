@@ -1,0 +1,177 @@
+// Based on file from Open Arena
+male
+
+getflag
+{
+	sound/voices/male1/getthatflag.ogg	"Get that flag!"
+}
+
+offense
+{
+	sound/voices/male1/youreonoffense.ogg	"You are on offense."
+}
+
+defend
+{
+	sound/voices/male1/defendthebase.ogg	"Defend the base."
+}
+
+defendflag
+{
+	sound/voices/male1/defendflag.ogg	"Defend our flag."
+}
+
+patrol
+{
+	sound/voices/male1/gopatrol.ogg	"Go patrol the area"
+}
+
+followme
+{
+	sound/voices/male1/followme.ogg	"Follow me."
+	sound/voices/male1/coverme.ogg	"Cover me."
+}
+
+yes
+{
+	sound/voices/male1/yes.ogg	"Yes."
+	sound/voices/male1/okay.ogg	"Okay."
+}
+
+no
+{
+	sound/voices/male1/no.ogg	"No."
+}
+
+ihaveflag
+{
+	sound/voices/male1/haveflag.ogg	"I have the flag!"
+}
+
+baseattack
+{
+	sound/voices/male1/baseunderattack.ogg	"Our base is under attack!"
+}
+
+enemyhasflag
+{
+	sound/voices/male1/haveourflag.ogg	"They have our flag!"
+
+}
+
+ongetflag
+{
+	// oops, this was supposed to be for one flag ctf but we didn't have a getting the flag...
+	sound/voices/male1/gettingourflag.ogg	"Getting our flag"
+}
+
+onoffense
+{
+	sound/voices/male1/wanttoattack.ogg	"I want to attack!"
+	sound/voices/male1/imgoingin.ogg	"I'm goin' in"
+}
+
+ondefense
+{
+	sound/voices/male1/illcoverbase.ogg	"I'll cover our base"
+}
+
+onpatrol
+{
+	sound/voices/male1/justroaming.ogg	"Just roaming around"
+}
+
+startleader
+{
+	sound/voices/male1/imtheleader.ogg	"I'm the leader"
+}
+
+stopleader
+{
+	sound/voices/male1/dontwannabeleader.ogg	"I don't want to be the leader anymore."
+}
+
+kill_insult
+{
+	
+
+}
+
+taunt
+{
+
+}
+
+death_insult
+{
+
+}
+
+praise
+{
+
+}
+
+camp
+{
+	sound/voices/male1/camphere.ogg	"Camp here."
+
+}
+
+returnflag
+{
+	sound/voices/male1/getflag.ogg	"Get our flag!"
+
+}
+
+whoisleader
+{
+	sound/voices/male1/whoisleader.ogg	"Who is our leader?"
+
+}
+
+followflagcarrier
+{
+	sound/voices/male1/keepupcarrier.ogg	"Keep up with the carrier."
+}
+
+inposition
+{
+	sound/voices/male1/inposition.ogg	"I'm in position."
+}
+
+wantondefense
+{
+	sound/voices/male1/wanttodefend.ogg	"I want to defend."
+}
+
+wantonoffense
+{
+	sound/voices/male1/wanttoattack.ogg	"I want to attack."
+}
+
+wantonpatrol
+{
+	sound/voices/male1/wanttoroam.ogg	"I want to roam around."
+}
+
+oncamp
+{
+	sound/voices/male1/imcampinghere.ogg	"I'm camping here"
+}
+
+onfollow
+{
+	sound/voices/male1/imfollowing.ogg	"I'm following"
+}
+
+onfollowcarrier
+{
+	sound/voices/male1/followingcarrier.ogg	"Following the carrier."
+}
+
+onreturnflag
+{
+	sound/voices/male1/gettingourflag.ogg	"Getting our flag!"
+}
+

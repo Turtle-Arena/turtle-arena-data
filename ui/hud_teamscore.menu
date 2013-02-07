@@ -1,0 +1,230 @@
+/*
+===========================================================================
+Copyright (C) 2007 Open Arena Team
+Copyright (C) 2010 Zack Middleton
+
+This file is part of Turtle Arena.
+
+Turtle Arena is free software; you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+
+Turtle Arena is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Turtle Arena; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+===========================================================================
+*/
+
+#include "ui/menudef.h"
+
+{
+menuDef	{
+	name "teamscore_menu"
+	fullscreen 0
+	visible 0
+	focusColor 0.1 0.6 1 1
+	rect 0 0 640 480
+	style 0
+	
+itemDef {
+	name "gametypebar"
+	rect 70 20 120 20
+	style WINDOW_STYLE_FILLED
+	border 1
+	bordercolor 0.25 0.25 0.25 0.7
+	forecolor 1 1 1 1
+	backcolor 0 0 0 .33
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "gametype"
+	ownerdraw CG_GAME_TYPE
+	textalign 1
+	textscale .25
+	rect 74 20 120 20
+	forecolor 1 1 1 1
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "blueteambar"
+	rect 70 100 250 25
+	style WINDOW_STYLE_FILLED
+	border 1
+	bordercolor 1 1 1 1
+	forecolor 1 1 1 1
+	backcolor 0 0 1 .33
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "redteambar"
+	rect 320 100 250 25
+	style WINDOW_STYLE_FILLED
+	border 1
+	bordercolor 1 1 1 1
+	forecolor 1 1 1 1
+	backcolor 1 0 0 .33
+	decoration
+	visible 1
+	}
+
+itemDef	{
+	name "blueteam"
+	ownerdraw CG_BLUE_NAME
+	textalign 2
+	textscale .5
+	rect 150 113 100 10
+	forecolor 0 0 1 1
+	decoration
+	visible 1
+	}
+
+itemDef	{
+	name "redteam"
+	ownerdraw CG_RED_NAME
+	textalign 2
+	textscale .5
+	rect 400 113 0 10
+	forecolor 1 0 0 1
+	decoration
+	visible 1
+	}
+
+itemDef	{
+	name "status"
+	ownerdraw CG_GAME_STATUS
+	textscale .25
+	rect 240 75 300 10
+	textalign 1
+	backcolor 0 0 0 0
+	forecolor 1 1 1 1
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "bluelogo"
+	style WINDOW_STYLE_SHADER
+	background "textures/ctf2/blueteam01"
+	rect 131 186 128 128
+	forecolor 0 0 .75 0.5
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "redlogo"
+	style WINDOW_STYLE_SHADER
+	background "textures/ctf2/redteam01"
+	rect 381 186 128 128
+	forecolor .75 0 0 0.5
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "blueteam"
+	rect 70 125 250 250
+	forecolor .75 .75 .75 1
+	type ITEM_TYPE_LISTBOX
+	style WINDOW_STYLE_FILLED
+	elementwidth 135
+	elementheight 20
+	textscale .2
+	elementtype LISTBOX_TEXT
+	feeder FEEDER_BLUETEAM_LIST
+	border 1
+	bordercolor   0.25 0.25 0.25 0.7
+	forecolor     1 1 1 1
+	backcolor     0 0 0 0.5
+	outlinecolor  1 0.5 0.1 0.3
+	notselectable
+	visible 1
+	columns 7
+		2 12 12		//botskill + player status
+		18 12 12	//more status
+		34 20 1		//leader
+		50 75 16	//name
+		135 20 20	//score
+		175 20 20	//time
+		200 10 10	//ping
+	}
+
+
+
+itemDef {
+	name "redteam"
+	rect 320 125 250 250
+	forecolor 1 1 1 1
+	type ITEM_TYPE_LISTBOX
+	style WINDOW_STYLE_FILLED
+	elementwidth 135
+	elementheight 20
+	textscale .2
+	elementtype LISTBOX_TEXT
+	feeder FEEDER_REDTEAM_LIST
+	border 1
+	bordercolor   0.25 0.25 0.25 0.7
+	forecolor     1 1 1 1
+	backcolor     0 0 0 0.5
+	outlinecolor  1 0.5 0.1 0.3
+	notselectable
+	visible 1
+	columns 7
+		2 12 12		//botskill + player status
+		18 12 12	//more status
+		34 20 1		//leader
+		50 75 16	//name
+		135 20 20	//score
+		175 20 20	//time
+		200 10 10	//ping
+	}
+
+itemDef {
+	name "spec_background"
+   	rect 70 414 500 24
+	style WINDOW_STYLE_FILLED
+	border 1
+	bordercolor 0.25 0.25 0.25 0.7
+	forecolor 1 1 1 1
+	backcolor 0 0 0 0.5
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "spec_caption"
+	text "Spectating:"
+	textscale .25
+	textaligny 20
+	textalignx 3
+   	rect 74 414 82 24
+	style WINDOW_STYLE_FILLED
+	forecolor 1 1 1 1
+	decoration
+	visible 1
+	}
+
+itemDef {
+	name "spec_players"
+	ownerdraw CG_SPECTATORS
+   	rect 160 414 430 24
+	style WINDOW_STYLE_FILLED
+	forecolor 1 1 1 1
+	textscale .25
+	decoration
+	visible 1
+	}
+}
+}

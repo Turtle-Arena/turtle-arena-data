@@ -1,0 +1,28 @@
+//
+// menudefs for the main menu.
+//
+{
+	loadMenu { "ui/out_main.menu" }
+	loadMenu { "ui/out_connect.menu" }
+
+	loadMenu { "ui/out_play.menu" }
+	//loadMenu { "ui/out_newgame.menu" }
+	//loadMenu { "ui/out_loadgame.menu" }
+	//loadMenu { "ui/out_demo.menu" }
+	//loadMenu { "ui/out_cinematics.menu" }
+
+	//loadMenu { "ui/out_multiplayer.menu" }
+	//loadMenu { "ui/out_createserver.menu" }
+	//loadMenu { "ui/out_join.menu" }
+	//loadMenu { "ui/out_joinip.menu" }
+	//loadMenu { "ui/out_setupplayer.menu" }
+
+	//loadMenu { "ui/out_options.menu" }
+	//loadMenu { "ui/out_controls.menu" }
+	//loadMenu { "ui/out_ctrl_misc.menu" }
+
+	//loadMenu { "ui/out_mods.menu" }
+
+	loadMenu { "ui/out_quit.menu" }
+}
+

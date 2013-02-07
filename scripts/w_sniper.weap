@@ -1,0 +1,39 @@
+//
+// Railgun (Quickly modified for Turtle Arena)
+//
+
+projectile "p_rail"
+{
+	instantDamage 1
+	damage 100
+	trailType PT_RAIL
+	deathType PD_RAIL
+	hitMarkName "gfx/damage/plasma_mrk"
+	hitMarkRadius 24
+	hitMarkColorize 1
+	maxHits 4
+}
+
+weapon "w_railgun"
+{
+	weapontype WT_GUN
+	model "models/weapons2/railgun/railgun.md3"
+	//mod MOD_RAILGUN
+	attackDelay 1500
+	flashColor 1 0.5 0
+	//flashSound0 "sound/weapons/railgun/railgf1a.wav"
+	//readySound "sound/weapons/railgun/rg_hum.wav"
+	projectile "p_rail"
+}
+
+weapongroup "wp_railgun"
+{
+	itemName "weapon_railgun"
+	//pickupName "Railgun"
+	pickupName "Sniper Rifle"
+	pickupModel "models/weapons2/railgun/railgun.md3"
+	iconName "icons/iconw_railgun"
+	pickupAmmo 10
+	weapon_primary "w_railgun"
+}
+

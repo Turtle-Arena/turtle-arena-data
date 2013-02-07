@@ -1,5 +1,14 @@
 // shaders for the q3_ui menus
 
+menu/art/titlebanner
+{
+	nomipmaps
+	{
+		map menu/art/titlebanner.png
+		blendfunc blend
+	}
+}
+
 gfx/2d/bigchars
 {
 	nopicmip
@@ -27,7 +36,19 @@ menuback
 {
 	nomipmaps
 	{
-		map textures/sfx/logo512.png
+		map menu/art/menuback.png
+		tcMod scroll 0.02 0.01
+	}
+}
+
+menubackInGame
+{
+	nomipmaps
+	{
+		map menu/art/menuback.png
+		tcMod scroll 0.02 0.01
+		alphaGen const 0.5
+		blendfunc blend
 	}
 }
 
@@ -36,15 +57,17 @@ menubackRagePro
 {
 	nomipmaps
 	{
-		map textures/sfx/logo512.png
+		map menu/art/menuback.png
+		tcMod scroll 0.02 0.01
 	}
 }
 
-menubacknologo
+menubackInGameRagePro
 {
 	nomipmaps
 	{
-		map gfx/colors/black.png
+		map menu/art/menuback.png
+		tcMod scroll 0.02 0.01
 	}
 }
 

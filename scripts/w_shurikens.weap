@@ -1,0 +1,93 @@
+//
+// Shurikens
+//
+
+// NOTE: The shuriken projectile names are currently hardcoded.
+
+projectile "p_shuriken"
+{
+	model "models/shurikens/shuriken.md3"
+	damage 10
+	speed 700
+	timetolive 15000
+	spinType "PS_PITCH"
+	explosionType "PE_NONE"
+	impactMarkName "gfx/damage/bullet_mrk"
+	impactMarkRadius 8
+	stickOnImpact PSOI_KEEP_ANGLES
+}
+
+// Still work-in-progress...
+projectile "p_electricshuriken"
+{
+	model "models/shurikens/shurikenelectric.md3"
+	damage 10
+	speed 700
+	spinType "PS_PITCH"
+
+	bounceType "PB_HALF"
+	useGravity 1
+	timetolive 2500
+	splashDamage 10
+	splashRadius 60
+	deathType "PD_ROCKET_SMALL"
+	hitMarkName "gfx/damage/burn_med_mrk"
+	hitMarkRadius 32
+
+	// bounce mark
+	impactMarkName "gfx/damage/hole_lg_mrk"
+	impactMarkRadius 8
+
+	// grappling shuriken
+	//timetolive 10000
+	//trailType "PT_GRAPPLE"
+	//deathType "PD_BULLET"
+	//hitMarkName "gfx/damage/hole_lg_mrk"
+	//hitMarkRadius 12
+	//grappling 1
+	//spinType "PS_NONE"
+}
+
+projectile "p_fireshuriken"
+{
+	model "models/shurikens/shurikenfire.md3"
+	damage 15
+	splashDamage 10
+	splashRadius 60
+	speed 700
+	timetolive 3000
+	shootable 1
+	trailType "PT_GRENADE"
+	deathType "PD_ROCKET_SMALL"
+	spinType "PS_PITCH"
+	hitMarkName "gfx/damage/burn_med_mrk"
+	hitMarkRadius 32
+	stickOnImpact PSOI_KEEP_ANGLES
+	impactMarkName "gfx/damage/bullet_mrk"
+	impactMarkRadius 8
+}
+
+projectile "p_lasershuriken"
+{
+	model "models/shurikens/shurikenlaser.md3"
+	damage 7
+	speed 700
+	timetolive 15000
+	spinType "PS_PITCH"
+	bounceType "PB_FULL"
+	maxBounces 7
+	hitSound0 "sound/items/lasershuriken_bounce.ogg"
+	hitMarkName "gfx/damage/plasma_mrk"
+	hitMarkRadius 16
+	hitMarkFadeAlpha 1
+
+	impactSound0 "sound/items/lasershuriken_bounce.ogg"
+	impactMarkName "gfx/damage/plasma_mrk"
+	impactMarkRadius 8
+	impactMarkFadeAlpha 1
+
+	trailType "PT_SPARKS"
+	missileDlight 100
+	missileDlightColor 0.8 0 1 // cc00ff
+}
+
