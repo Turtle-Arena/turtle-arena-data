@@ -1,3 +1,4 @@
+packaged/*
 vm/*.qvm
 *.so
 *.dll
