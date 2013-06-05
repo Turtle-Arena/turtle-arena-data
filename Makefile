@@ -52,7 +52,7 @@ $(BUILD_DIR)/assets0.pk3: makedirs
 
 
 nonzipped: makedirs
-	@$(CP) -rt $(BUILD_DIR) $(FILES)
+	@$(CP) -r $(FILES) $(BUILD_DIR)
 
 
 clean:
