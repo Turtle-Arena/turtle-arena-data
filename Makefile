@@ -39,7 +39,9 @@ ASSETS := \
 	default.cfg \
 	gameinfo.txt \
 	M+FONTS_LICENSE.txt \
-	teaminfo.txt
+	teaminfo.txt \
+	windowicon.png \
+	windowicon32.png
 
 all: $(TARGETS)
 
