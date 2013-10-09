@@ -1,0 +1,2 @@
+defaultSound "sound/misc/silence.wav"
+
