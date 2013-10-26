@@ -1,2 +1,3 @@
 defaultSound "sound/misc/silence.wav"
+addLoadingScreen clientLoading ( 0.050980 0.050980 0.050980 ) 1.333333
 
