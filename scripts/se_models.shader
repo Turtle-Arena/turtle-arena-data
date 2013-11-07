@@ -411,8 +411,6 @@ models/ammo/pulse/pulse
 //
 models/materials/dirt
 {
-	celoutline 2
-
 	{
 		map models/materials/dirt.png
 		blendFunc GL_ONE GL_ZERO
@@ -428,8 +426,6 @@ models/materials/dirt
 
 models/materials/grass
 {
-	celoutline 2
-
 	{
 		map models/materials/grass.png
 		blendFunc GL_ONE GL_ZERO
@@ -445,8 +441,6 @@ models/materials/grass
 
 models/materials/wood
 {
-	celoutline 2
-
 	{
 		map models/materials/wood.png
 		blendFunc GL_ONE GL_ZERO
@@ -462,8 +456,6 @@ models/materials/wood
 
 models/materials/stone
 {
-	celoutline 2
-
 	{
 		map models/materials/stone.png
 		blendFunc GL_ONE GL_ZERO
@@ -479,8 +471,6 @@ models/materials/stone
 
 models/materials/metal
 {
-	celoutline 2
-
 	{
 		map models/materials/metal.png
 		blendFunc GL_ONE GL_ZERO
@@ -501,7 +491,6 @@ models/materials/glass
 {
 	surfaceparm trans
 	cull none
-	celoutline 2
 
 	{
 		map textures/effects/tinfx.png
