@@ -6,8 +6,6 @@
 // If you want to use modified pk3s (and don't want the annoying pop up), uncomment the following line:
 //config noPakMismatchWarningDialog
 
-// nodownload keyword tells server not to allow pk3 to be downloaded
-//assets0			0000000000	nodownload
-//assets1-qvms	0000000000	nodownload
-//assets2-music	0000000000	nodownload
+//assets0	0000000000 // Data
+//assets1	0000000000 // QVMs
 

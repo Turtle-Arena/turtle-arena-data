@@ -10,13 +10,11 @@ RM:= rm -f
 
 BUILD_DIR:=packaged
 
-TARGETS := $(BUILD_DIR)/assets0.pk3 nonzipped
+TARGETS := $(BUILD_DIR)/assets0.pk3 $(BUILD_DIR)/assets2.pk3 nonzipped
 
 # Non-zipped
 FILES := \
-	music \
-	description.txt \
-	PAKSUMS
+	description.txt
 
 # Zipped
 ASSETS := \
@@ -28,6 +26,7 @@ ASSETS := \
 	maps \
 	menu \
 	models \
+	music \
 	scripts \
 	sound \
 	sprites \
@@ -44,6 +43,10 @@ ASSETS := \
 	windowicon.png \
 	windowicon32.png
 
+# Zipped 2
+ASSETS2 := \
+	PAKSUMS
+
 all: $(TARGETS)
 
 makedirs:
@@ -54,12 +57,16 @@ $(BUILD_DIR)/assets0.pk3: makedirs
 	@$(ZIP) -qor $@ $(ASSETS)
 
 
+$(BUILD_DIR)/assets2.pk3: makedirs
+	@$(ZIP) -qor $@ $(ASSETS2)
+
+
 nonzipped: makedirs
 	@$(CP) -r $(FILES) $(BUILD_DIR)
 
 
 clean:
-	$(RM) $(BUILD_DIR)/assets0.pk3
+	$(RM) $(BUILD_DIR)/assets0.pk3 $(BUILD_DIR)/assets2.pk3
 	$(CD) $(BUILD_DIR) ; $(RM) -r $(FILES)
 
 .PHONY: all makedirs nonzipped clean
