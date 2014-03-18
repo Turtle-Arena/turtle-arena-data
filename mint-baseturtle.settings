@@ -3,3 +3,8 @@ addLoadingScreen clientLoading ( 0.050980 0.050980 0.050980 ) 1.333333
 cvarDefault r_overBrightBits 0
 cvarDefault r_mapOverBrightBits 1
 
+paksums {
+	//assets0	0000000000 // Data
+	//assets1	0000000000 // QVMs
+}
+

@@ -36,7 +36,6 @@ ASSETS := \
 	CC-BY-SA-3.0.txt \
 	COPYRIGHTS.txt \
 	default.cfg \
-	gameconfig.txt \
 	gameinfo.txt \
 	M+FONTS_LICENSE.txt \
 	teaminfo.txt \
@@ -45,7 +44,7 @@ ASSETS := \
 
 # Zipped 2
 ASSETS2 := \
-	PAKSUMS
+	mint-baseturtle.settings
 
 all: $(TARGETS)
 
