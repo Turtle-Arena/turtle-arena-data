@@ -44,7 +44,7 @@ ASSETS := \
 
 # Zipped 2
 ASSETS2 := \
-	mint-baseturtle.settings
+	mint-game.settings
 
 all: $(TARGETS)
 
