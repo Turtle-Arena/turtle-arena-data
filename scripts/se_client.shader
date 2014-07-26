@@ -7,13 +7,6 @@ clientLoading
 	{
 		map gfx/clientLoading.png
 	}
-
-	// ZTM: HACK: For some reason it needs two stages, otherwise it just shows white...
-	// so I added an invisable stage.
-	{
-		map textures/common/invisible.tga
-		blendFunc blend
-	}
 }
 
 console
