@@ -668,12 +668,6 @@ models/powerups/ob2_1
 		blendfunc add
 		rgbGen wave sin 0.8 0.1 0 0.8
 	}
-	{
-		map textures/sfx/celshader.png
-		blendfunc blend
-		rgbGen identityLighting
-		tcGen cel
-	}
 }
 
 // overload_target.md3
@@ -696,12 +690,6 @@ models/powerups/ob2_3
 		tcMod rotate 36
 		rgbGen entity
 		//rgbGen wave sin 1 0.2 0 0.8
-	}
-	{
-		map textures/sfx/celshader.png
-		blendfunc blend
-		rgbGen identityLighting
-		tcGen cel
 	}
 }
 
