@@ -262,20 +262,6 @@
 }
 // entity 10
 {
-"classname" "misc_model"
-"origin" "264.000031 1088.000000 -206.250000"
-"model" "models/mapobjects/fern1/fern1.md3"
-"angle" "90.000000"
-}
-// entity 11
-{
-"classname" "misc_model"
-"origin" "376.000031 1208.000000 -206.250000"
-"model" "models/mapobjects/fern1/fern1.md3"
-"angle" "90.000000"
-}
-// entity 12
-{
 "classname" "func_breakable"
 "health" "100"
 "material" "wood"
@@ -291,7 +277,7 @@
 ( 724 896 -128 ) ( 980 896 -192 ) ( 724 896 -192 ) base_wall/crate_item 219.4267578125 146.2857666016 0 0.2187499255 0.2187500149 0 0 0
 }
 }
-// entity 13
+// entity 11
 {
 "classname" "func_breakable"
 "health" "100"
@@ -306,7 +292,7 @@
 ( 784 960 -128 ) ( 1040 960 -192 ) ( 784 960 -192 ) base_wall/crate 146.2856445312 146.2857055664 0 0.2187499851 0.2187499851 0 0 0
 }
 }
-// entity 14
+// entity 12
 {
 "classname" "func_breakable"
 "health" "100"
@@ -321,7 +307,7 @@
 ( 887.063659668 751.1998291016 -128 ) ( 1065.9812011719 934.2967529297 -192 ) ( 887.063659668 751.1998291016 -192 ) base_wall/crate 205.83984375 146.2857055664 0 0.1630023569 0.2187499851 0 0 0
 }
 }
-// entity 15
+// entity 13
 {
 "classname" "func_breakable"
 "mustcut" "1"
@@ -337,7 +323,7 @@
 ( 677.1596069336 1091.4630126953 -128 ) ( 899.5408935547 964.6459960938 -192 ) ( 677.1596069336 1091.4630126953 -192 ) base_wall/crate_metal 91.63671875 146.2857055664 0 0.1868639588 0.2187499851 0 0 0
 }
 }
-// entity 16
+// entity 14
 {
 "classname" "func_breakable"
 "health" "10"
@@ -353,7 +339,7 @@
 ( 790 768 -120 ) ( 790 1024 -184 ) ( 790 768 -184 ) base_wall/glass01 0 0 0 0.5 0.5 0 0 0
 }
 }
-// entity 17
+// entity 15
 {
 "classname" "func_bobbing"
 "height" "256"
@@ -367,11 +353,11 @@
 ( 152 864 168 ) ( 336 864 40 ) ( 152 864 40 ) tech/terminal_grey 0 0 0 0.5 0.5 0 0 0
 }
 }
-// entity 18
+// entity 16
 {
 "classname" "func_train"
 }
-// entity 19
+// entity 17
 {
 "classname" "path_start"
 "origin" "-760.000000 928.000000 -160.000000"
@@ -379,14 +365,14 @@
 "target" "2dpath_end"
 "angle" "90.000000"
 }
-// entity 20
+// entity 18
 {
 "classname" "path_end"
 "origin" "1272.000000 928.000000 -160.000000"
 "targetname" "2dpath_end"
 "angle" "90.000000"
 }
-// entity 21
+// entity 19
 {
 "classname" "target_setpath"
 "origin" "248.000000 640.000000 -160.000000"
@@ -394,73 +380,87 @@
 "target" "2dpath_start"
 "angle" "90.000000"
 }
-// entity 22
+// entity 20
 {
 "classname" "misc_object"
 "origin" "128.000000 1000.000000 -192.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 "angle" "-90.000000"
 }
-// entity 23
+// entity 21
 {
 "classname" "misc_object"
 "origin" "64.000000 1000.000000 -192.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 "angle" "-90.000000"
 }
-// entity 24
+// entity 22
 {
 "classname" "misc_object"
 "origin" "640.000000 1152.000000 -192.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 "angle" "-90.000000"
 }
-// entity 25
+// entity 23
 {
 "classname" "misc_object"
 "origin" "704.000000 1152.000000 -192.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 "angle" "-90.000000"
 }
-// entity 26
+// entity 24
 {
 "classname" "misc_object"
 "origin" "768.000000 1152.000000 -192.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 "angle" "-90.000000"
 }
-// entity 27
+// entity 25
 {
 "classname" "info_player_deathmatch"
 "origin" "-208.024963 927.944458 -179.200012"
 "angle" "0.000016"
 "target" "trigger_2dpath_start"
 }
-// entity 28
+// entity 26
 {
 "classname" "info_player_deathmatch"
 "origin" "-104.024963 927.944458 -179.200012"
 "angle" "0.000016"
 "target" "trigger_2dpath_start"
 }
-// entity 29
+// entity 27
 {
 "classname" "info_player_deathmatch"
 "origin" "-320.024963 927.944458 -179.200012"
 "angle" "0.000016"
 "target" "trigger_2dpath_start"
 }
-// entity 30
+// entity 28
 {
 "classname" "info_player_deathmatch"
 "origin" "688.024963 928.055542 -179.200012"
 "angle" "-179.999985"
 "target" "trigger_2dpath_start"
 }
-// entity 31
+// entity 29
 {
 "classname" "info_player_deathmatch"
 "origin" "576.024963 928.055542 -179.200012"
 "angle" "-179.999985"
 "target" "trigger_2dpath_start"
+}
+// entity 30
+{
+"classname" "misc_gamemodel"
+"origin" "264.000031 1088.000000 -206.250000"
+"model" "models/mapobjects/fern1/fern1.md3"
+"angle" "90.000000"
+}
+// entity 31
+{
+"classname" "misc_gamemodel"
+"origin" "376.000031 1208.000000 -206.250000"
+"model" "models/mapobjects/fern1/fern1.md3"
+"angle" "90.000000"
 }

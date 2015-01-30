@@ -1430,49 +1430,49 @@ city/road
 }
 // entity 15
 {
-"classname" "misc_gamemodel"
-"origin" "151.999924 -291.480652 4.000008"
-"model" "models/mapobjects/car/car.md3"
-"angles" "-0.000000 89.999992 3.722170"
-}
-// entity 16
-{
-"classname" "misc_gamemodel"
-"origin" "-464.000153 -680.000061 3.998982"
-"model" "models/mapobjects/car/car.md3"
-"angles" "-0.000000 -89.999992 3.722170"
-}
-// entity 17
-{
-"classname" "misc_gamemodel"
-"origin" "-463.999939 -423.999878 3.999006"
-"model" "models/mapobjects/car/car.md3"
-"angles" "-0.000000 -89.999992 3.722170"
-"skin" "models/mapobjects/car/red.skin"
-}
-// entity 18
-{
-"classname" "misc_gamemodel"
+"classname" "misc_object"
 "origin" "216.000000 -544.000000 8.000000"
 "model" "models/mapobjects/traffic_cone/traffic_cone.solid.md3"
 }
-// entity 19
+// entity 16
 {
-"classname" "misc_gamemodel"
+"classname" "misc_object"
 "origin" "272.000000 -504.000000 8.000000"
 "model" "models/mapobjects/traffic_cone/traffic_cone.solid.md3"
 }
-// entity 20
+// entity 17
 {
-"classname" "misc_gamemodel"
+"classname" "misc_object"
 "origin" "271.999969 -559.999756 16.999989"
 "model" "models/mapobjects/traffic_cone/traffic_cone.md3"
 "angles" "69.058159 -151.118362 -179.970947"
 "spawnflags" "1"
 }
+// entity 18
+{
+"classname" "misc_object"
+"origin" "151.999924 -291.480652 4.000008"
+"model" "models/mapobjects/car/car.md3"
+"angles" "-0.000000 89.999992 3.722170"
+}
+// entity 19
+{
+"classname" "misc_object"
+"origin" "-464.000153 -680.000061 3.998982"
+"model" "models/mapobjects/car/car.md3"
+"angles" "-0.000000 -89.999992 3.722170"
+}
+// entity 20
+{
+"classname" "misc_object"
+"origin" "-463.999939 -423.999878 3.999006"
+"model" "models/mapobjects/car/car.md3"
+"angles" "-0.000000 -89.999992 3.722170"
+"skin" "models/mapobjects/car/red.skin"
+}
 // entity 21
 {
-"classname" "misc_gamemodel"
+"classname" "misc_object"
 "origin" "416.000000 -248.000000 416.000000"
 "model" "models/mapobjects/vent/vent.md3"
 "angles" "-0.000000 -89.999992 -0.000001"

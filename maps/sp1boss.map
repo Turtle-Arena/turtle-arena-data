@@ -146,6 +146,15 @@
 ( -528 704 -24 ) ( -528 704 64 ) ( -152 704 -24 ) base_floor/sonic_tile 0 0 0 0.5 0.5 0 0 0
 ( -384 672 -24 ) ( -384 1032 -24 ) ( -384 672 64 ) base_floor/sonic_tile 0 0 0 0.5 0.5 0 0 0
 }
+// brush 13
+{
+( 448 992 304 ) ( 448 696 304 ) ( 88 992 304 ) common/donotenter 224 0 0 0.5 0.5 0 0 0
+( 432 984 0 ) ( 72 984 0 ) ( 432 984 -56 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 432 992 0 ) ( 432 992 -56 ) ( 432 696 0 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 72 696 -56 ) ( 432 696 -56 ) ( 72 992 -56 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 72 696 -56 ) ( 72 696 0 ) ( 432 696 -56 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+( 80 696 -56 ) ( 80 992 -56 ) ( 80 696 0 ) common/donotenter 0 0 0 0.5 0.5 0 0 0
+}
 }
 // entity 1
 {
@@ -194,138 +203,138 @@
 }
 // entity 8
 {
-"classname" "misc_model"
-"origin" "-416.000092 -376.000061 -24.000006"
-"model" "models/mapobjects/fern1/fern1.md3"
-"modelscale" "0.600000"
-"angles" "5.353946 -20.040558 0.000000"
-}
-// entity 9
-{
-"classname" "misc_model"
-"origin" "-392.000000 296.000000 -24.000000"
-"model" "models/mapobjects/fern1/fern1.md3"
-}
-// entity 10
-{
-"classname" "misc_model"
-"origin" "-431.999847 776.000061 -24.000080"
-"model" "models/mapobjects/fern1/fern1.md3"
-"angles" "12.959775 -26.291710 -6.391092"
-}
-// entity 11
-{
-"classname" "misc_model"
-"origin" "-352.000000 -72.000000 -23.999996"
-"model" "models/mapobjects/fern1/fern1.md3"
-"angles" "1.701177 17.345175 0.000000"
-}
-// entity 12
-{
-"classname" "misc_model"
-"origin" "383.999969 687.999695 -24.000013"
-"model" "models/mapobjects/fern1/fern1.md3"
-"modelscale" "1.200000"
-"angles" "-7.683518 -4.838995 10.156373"
-}
-// entity 13
-{
-"classname" "misc_model"
-"origin" "440.000000 336.000000 -23.999998"
-"model" "models/mapobjects/fern1/fern1.md3"
-"angle" "17.345175"
-}
-// entity 14
-{
-"classname" "misc_model"
-"origin" "384.000031 23.999996 -23.999985"
-"model" "models/mapobjects/fern1/fern1.md3"
-"angles" "5.184473 17.345173 0.000000"
-}
-// entity 15
-{
 "classname" "misc_object"
 "origin" "-312.000000 -328.000000 -24.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 "angle" "45.000000"
 }
-// entity 16
+// entity 9
 {
 "classname" "misc_object"
 "origin" "-384.000000 496.000000 -24.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 }
-// entity 17
+// entity 10
 {
 "classname" "misc_object"
 "origin" "-384.000000 432.000000 -24.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 }
-// entity 18
+// entity 11
 {
 "classname" "misc_object"
 "origin" "-384.000000 368.000000 -24.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 }
-// entity 19
+// entity 12
 {
 "classname" "misc_object"
 "origin" "-376.000000 -264.000000 -24.000000"
 "model" "models/animobjects/flower_pinwheel/flower_pinwheel.md3"
 "angle" "45"
 }
-// entity 20
+// entity 13
 {
 "classname" "info_player_deathmatch"
 "origin" "0.000000 -64.000000 8.000000"
 "angle" "90.000000"
 }
-// entity 21
+// entity 14
 {
 "classname" "item_health_small"
 "origin" "376.000000 440.000000 8.000000"
 }
-// entity 22
+// entity 15
 {
 "classname" "item_health_small"
 "origin" "-400.000000 -48.000000 8.000000"
 }
-// entity 23
+// entity 16
 {
 "classname" "item_health_small"
 "origin" "376.000000 504.000000 8.000000"
 }
-// entity 24
+// entity 17
 {
 "classname" "item_health_small"
 "origin" "376.000000 568.000000 8.000000"
 }
-// entity 25
+// entity 18
 {
 "classname" "item_health_small"
 "origin" "-400.000000 -176.000000 8.000000"
 }
-// entity 26
+// entity 19
 {
 "classname" "item_health_small"
 "origin" "-400.000000 -112.000000 8.000000"
 }
-// entity 27
+// entity 20
 {
 "classname" "target_level_end"
 "origin" "-168.000000 816.000000 32.000000"
 "message" "sp_end"
 "targetname" "boss_death"
 }
-// entity 28
+// entity 21
 {
 "classname" "team_CTF_redspawn"
 "origin" "0.000000 768.000000 8.000000"
 "angle" "-90.000000"
 }
-// entity 29
+// entity 22
 {
 "classname" "team_CTF_redplayer"
 "origin" "40.000000 768.000000 8.000000"
 "angle" "-90.000000"
+}
+// entity 23
+{
+"classname" "misc_gamemodel"
+"origin" "-416.000092 -376.000061 -24.000006"
+"model" "models/mapobjects/fern1/fern1.md3"
+"modelscale" "0.600000"
+"angles" "5.353946 -20.040558 0.000000"
+}
+// entity 24
+{
+"classname" "misc_gamemodel"
+"origin" "-392.000000 296.000000 -24.000000"
+"model" "models/mapobjects/fern1/fern1.md3"
+}
+// entity 25
+{
+"classname" "misc_gamemodel"
+"origin" "-431.999847 776.000061 -24.000080"
+"model" "models/mapobjects/fern1/fern1.md3"
+"angles" "12.959775 -26.291710 -6.391092"
+}
+// entity 26
+{
+"classname" "misc_gamemodel"
+"origin" "384.000031 23.999996 -23.999985"
+"model" "models/mapobjects/fern1/fern1.md3"
+"angles" "5.184473 17.345173 0.000000"
+}
+// entity 27
+{
+"classname" "misc_gamemodel"
+"origin" "-352.000000 -72.000000 -23.999996"
+"model" "models/mapobjects/fern1/fern1.md3"
+"angles" "1.701177 17.345175 0.000000"
+}
+// entity 28
+{
+"classname" "misc_gamemodel"
+"origin" "383.999969 687.999695 -24.000013"
+"model" "models/mapobjects/fern1/fern1.md3"
+"modelscale" "1.200000"
+"angles" "-7.683518 -4.838995 10.156373"
+}
+// entity 29
+{
+"classname" "misc_gamemodel"
+"origin" "440.000000 336.000000 -23.999998"
+"model" "models/mapobjects/fern1/fern1.md3"
+"angle" "17.345175"
 }
