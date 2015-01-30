@@ -169,6 +169,14 @@ models/shurikens/laserglow
 	}
 }
 
+models/mapobjects/fern1/green
+{
+	{
+		map models/mapobjects/fern1/green.jpg
+		rgbGen lightingDiffuse
+	}
+}
+
 models/mapobjects/traffic_cone/traffic_cone
 {
 	{
