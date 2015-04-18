@@ -172,7 +172,7 @@ models/shurikens/laserglow
 models/mapobjects/fern1/green
 {
 	{
-		map models/mapobjects/fern1/green.jpg
+		map models/mapobjects/fern1/green.png
 		rgbGen lightingDiffuse
 	}
 }
