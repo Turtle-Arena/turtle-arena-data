@@ -1,6 +1,6 @@
 u_carapace,models/players/fugitoid/body
 u_torso,models/players/fugitoid/body
-u_tail,models/players/fugitoid/body
+u_tail,nodraw // disabled texture: models/players/fugitoid/body
 u_plastron,models/players/fugitoid/body
 u_arm_right,models/players/fugitoid/body
 u_arm_left,models/players/fugitoid/body

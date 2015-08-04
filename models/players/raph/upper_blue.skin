@@ -1,6 +1,6 @@
 u_carapace,$(dir)/carapace.png
 u_torso,$(dir)/carapace.png
-u_tail,$(dir)/carapace.png
+u_tail,nodraw // disabled texture: $(dir)/carapace.png
 u_plastron,$(dir)/plastron.png
 u_arm_right,$(dir)/arm_blue.png
 u_arm_left,$(dir)/arm_blue.png
