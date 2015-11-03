@@ -86,6 +86,12 @@ gfx/clientLoading_low.png
 textures/tech/terminal.png
 textures/tech/terminal_editor.png
 
+Images that use M+ 1mn Medium:
+menu/art/char_don.png
+menu/art/char_leo.png
+menu/art/char_mike.png
+menu/art/char_raph.png
+
 == zero-project.gr ==
 The following is copyright (c) 2010 zero-project and is licensed under the
 	Creative Commons Attribution-ShareAlike 3.0 Unported.
