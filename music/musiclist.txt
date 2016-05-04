@@ -19,60 +19,70 @@ music/example
 // Main menu music
 music/menu
 {
-	intro "music/zero-project_-_Whispering_Wind.ogg"
+	// The Mulletz - I Fear The Fear (2.24 mix) - CC-BY-NC-SA - http://ccmixter.org/files/NeilCrowe/28003
+	intro "music/NeilCrowe_-_I_Fear_The_Fear_(2.24_mix).ogg"
 }
 
 // Arcade mode post-game music
 music/postgame
 {
-	intro "music/zero-project_-_Whispering_Wind.ogg"
+	// The Mulletz - EVENT - CC0 - http://ccmixter.org/files/NeilCrowe/32301
+	intro "music/NeilCrowe_-_EVENT.ogg"
 }
 
 // Boss battle music
 music/boss
 {
-	intro "music/NeilCrowe_-_EVENT.ogg"
+	// The Mulletz - Dark Inside - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/27786
+	intro "music/NeilCrowe_-_Dark_Inside.ogg"
 }
 
 // Underground city music
 music/subway
 {
-	intro "music/NeilCrowe_-_EVENT.ogg"
+	// The Mulletz - I Can't take you there - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/27760
+	intro "music/NeilCrowe_-_I_Can_t_take_you_there.ogg"
 }
 
 // City (Aboveground) music
 music/city
 {
-	intro "music/zero-project_-_Whispering_Wind.ogg"
+	// The Mulletz - Gone - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/28169
+	intro "music/NeilCrowe_-_Gone.ogg"
 }
 
 // "Grass" music for outdoor levels that are mostly grass.
 music/grass
 {
-	intro "music/zero-project_-_Whispering_Wind.ogg"
+	// The Mulletz - Something Special - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/28594
+	intro "music/NeilCrowe_-_Something_Special.ogg"
 }
 
 // "Water" music for levels that are mostly water.
 music/water
 {
-	intro "music/zero-project_-_Whispering_Wind.ogg"
+	// The Mulletz - The Future Is Underwater - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/27922
+	intro "music/NeilCrowe_-_The_Future_Is_Underwater.ogg"
 }
 
 // Desert/Mountain
 music/desert
 {
-	intro "music/zero-project_-_Whispering_Wind.ogg"
+	// The Mulletz - Reborn - CC-BY-NC-SA - http://ccmixter.org/files/NeilCrowe/28065
+	intro "music/NeilCrowe_-_Reborn.ogg"
 }
 
 // Peaceful snowy valley music
 music/snow
 {
+	// zero-project - Whispering Wind - CC-BY-SA - http://www.jamendo.com/en/track/682363
 	intro "music/zero-project_-_Whispering_Wind.ogg"
 }
 
 // Space music
 music/space
 {
-	intro "music/NeilCrowe_-_EVENT.ogg"
+	// The Mulletz - Only I Know - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/27880
+	intro "music/NeilCrowe_-_Only_I_Know.ogg"
 }
 

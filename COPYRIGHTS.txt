@@ -97,13 +97,38 @@ The following is copyright (c) 2010 zero-project and is licensed under the
 	Creative Commons Attribution-ShareAlike 3.0 Unported.
 
 music/zero-project_-_Whispering_Wind.ogg
-		http://www.jamendo.com/en/track/682363
+		zero-project - Whispering Wind - CC-BY-SA - http://www.jamendo.com/en/track/682363
 
 == The Mulletz ==
-The following was released into the public domain in 2011 by Neil Crowe!
+The following are copyright (c) 2010-2011 Neil Crowe (The Mulletz)
+	and are license under various Creative Commons 3.0 licenses see list for details
 
 music/NeilCrowe_-_EVENT.ogg
-		http://ccmixter.org/files/NeilCrowe/32301
+		The Mulletz - EVENT - CC0 - http://ccmixter.org/files/NeilCrowe/32301
+
+music/NeilCrowe_-_I_Fear_The_Fear_(2.24_mix).ogg
+		The Mulletz - I Fear The Fear (2.24 mix) - CC-BY-NC-SA - http://ccmixter.org/files/NeilCrowe/28003
+
+music/NeilCrowe_-_Dark_Inside.ogg
+		The Mulletz - Dark Inside - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/27786
+
+music/NeilCrowe_-_I_Can_t_take_you_there.ogg
+		The Mulletz - I Can't take you there - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/27760
+
+music/NeilCrowe_-_Gone.ogg
+		The Mulletz - Gone - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/28169
+
+music/NeilCrowe_-_Something_Special.ogg
+		The Mulletz - Something Special - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/28594
+
+music/NeilCrowe_-_The_Future_Is_Underwater.ogg
+		The Mulletz - The Future Is Underwater - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/27922
+
+music/NeilCrowe_-_Reborn.ogg
+		The Mulletz - Reborn - CC-BY-NC-SA - http://ccmixter.org/files/NeilCrowe/28065
+
+music/NeilCrowe_-_Only_I_Know.ogg
+		The Mulletz - Only I Know - CC-BY-NC - http://ccmixter.org/files/NeilCrowe/27880
 
 == OpenArena ==
 Some of the shaders in the scripts/*.shader files are from OpenArena.
