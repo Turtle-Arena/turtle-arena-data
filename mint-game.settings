@@ -1,5 +1,5 @@
 defaultSound "sound/misc/silence.wav"
-addLoadingScreen clientLoading ( 0.050980 0.050980 0.050980 ) 1.333333
+addLoadingScreen clientLoading ( 0.050981 0.050981 0.050981 ) 1.333333
 cvarDefault r_overBrightBits 0
 cvarDefault r_mapOverBrightBits 1
 
