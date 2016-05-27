@@ -104,3 +104,187 @@ team_icon/Sais_blue
 	}
 }
 
+
+team_icon/flags/Shell_red
+{
+	deformVertexes wave 30 sin 0 3 0 .8
+	deformVertexes normal .3 .2
+	cull none
+
+	{
+		map team_icon/flags/Shell_red.png
+		rgbGen identityLighting
+	}
+	{
+		map models/flags/red_fx.png
+		tcGen environment
+		blendFunc GL_ONE GL_ONE
+		rgbGen identityLighting
+	}
+	{
+		map team_icon/flags/Shell_red.png
+		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		rgbGen identityLighting
+	}
+}
+
+team_icon/flags/Shell_blue
+{
+	deformVertexes wave 30 sin 0 3 0 .8
+	deformVertexes normal .3 .2
+	cull none
+
+	{
+		map team_icon/flags/Shell_blue.png
+		rgbGen identityLighting
+	}
+	{
+		map models/flags/blue_fx.png
+		tcGen environment
+		blendFunc GL_ONE GL_ONE
+		rgbGen identityLighting
+	}
+	{
+		map team_icon/flags/Shell_blue.png
+		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		rgbGen identityLighting
+	}
+}
+
+team_icon/flags/Clover_red
+{
+	deformVertexes wave 30 sin 0 3 0 .8
+	deformVertexes normal .3 .2
+	cull none
+
+	{
+		map team_icon/flags/Clover_red.png
+		rgbGen identityLighting
+	}
+	{
+		map models/flags/red_fx.png
+		tcGen environment
+		blendFunc GL_ONE GL_ONE
+		rgbGen identityLighting
+	}
+	{
+		map team_icon/flags/Clover_red.png
+		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		rgbGen identityLighting
+	}
+}
+
+team_icon/flags/Clover_blue
+{
+	deformVertexes wave 30 sin 0 3 0 .8
+	deformVertexes normal .3 .2
+	cull none
+
+	{
+		map team_icon/flags/Clover_blue.png
+		rgbGen identityLighting
+	}
+	{
+		map models/flags/blue_fx.png
+		tcGen environment
+		blendFunc GL_ONE GL_ONE
+		rgbGen identityLighting
+	}
+	{
+		map team_icon/flags/Clover_blue.png
+		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		rgbGen identityLighting
+	}
+}
+
+team_icon/flags/Katanas_red
+{
+	deformVertexes wave 30 sin 0 3 0 .8
+	deformVertexes normal .3 .2
+	cull none
+
+	{
+		map team_icon/flags/Katanas_red.png
+		rgbGen identityLighting
+	}
+	{
+		map models/flags/red_fx.png
+		tcGen environment
+		blendFunc GL_ONE GL_ONE
+		rgbGen identityLighting
+	}
+	{
+		map team_icon/flags/Katanas_red.png
+		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		rgbGen identityLighting
+	}
+}
+
+team_icon/flags/Katanas_blue
+{
+	deformVertexes wave 30 sin 0 3 0 .8
+	deformVertexes normal .3 .2
+	cull none
+
+	{
+		map team_icon/flags/Katanas_blue.png
+		rgbGen identityLighting
+	}
+	{
+		map models/flags/blue_fx.png
+		tcGen environment
+		blendFunc GL_ONE GL_ONE
+		rgbGen identityLighting
+	}
+	{
+		map team_icon/flags/Katanas_blue.png
+		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		rgbGen identityLighting
+	}
+}
+
+team_icon/flags/Sais_red
+{
+	deformVertexes wave 30 sin 0 3 0 .8
+	deformVertexes normal .3 .2
+	cull none
+
+	{
+		map team_icon/flags/Sais_red.png
+		rgbGen identityLighting
+	}
+	{
+		map models/flags/red_fx.png
+		tcGen environment
+		blendFunc GL_ONE GL_ONE
+		rgbGen identityLighting
+	}
+	{
+		map team_icon/flags/Sais_red.png
+		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		rgbGen identityLighting
+	}
+}
+
+team_icon/flags/Sais_blue
+{
+	deformVertexes wave 30 sin 0 3 0 .8
+	deformVertexes normal .3 .2
+	cull none
+
+	{
+		map team_icon/flags/Sais_blue.png
+		rgbGen identityLighting
+	}
+	{
+		map models/flags/blue_fx.png
+		tcGen environment
+		blendFunc GL_ONE GL_ONE
+		rgbGen identityLighting
+	}
+	{
+		map team_icon/flags/Sais_blue.png
+		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		rgbGen identityLighting
+	}
+}

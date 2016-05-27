@@ -594,7 +594,7 @@ models/flags/b_flag2
 }
 
 
-// Below CTF flag shaders from MISSIONPACK demo pak0.pk3/scripts/models2.shader
+// Below CTF flag shader from MISSIONPACK demo pak0.pk3/scripts/models2.shader
 models/flags/n_flag2
 {
 	deformVertexes wave 30 sin 0 3 0 .8
@@ -618,51 +618,6 @@ models/flags/n_flag2
 	}
 }
 
-models/flag2/r_flag2
-{
-	deformVertexes wave 30 sin 0 3 0 .8
-	deformVertexes normal .3 .2
-	cull none
-
-	{
-		map models/flag2/r_flag2.png
-		rgbGen identityLighting
-	}
-	{
-		map models/flag2/red_fx.png
-		tcGen environment
-		blendFunc GL_ONE GL_ONE
-		rgbGen identityLighting
-	}
-	{
-		map models/flag2/r_flag2.png
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-		rgbGen identityLighting
-	}
-}
-
-models/flag2/b_flag2
-{
-	deformVertexes wave 30 sin 0 3 0 .8
-	deformVertexes normal .3 .2
-	cull none
-
-	{
-		map models/flag2/b_flag2.png
-		rgbGen identityLighting
-	}
-	{
-		map models/flag2/blue_fx.png
-		tcGen environment
-		blendFunc GL_ONE GL_ONE
-		rgbGen identityLighting
-	}
-	{
-		map models/flag2/b_flag2.png
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-		rgbGen identityLighting
-	}
-}
 
 // overload_base.md3
 models/powerups/ob2_1
