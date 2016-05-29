@@ -1,14 +1,5 @@
 // Shaders used by the client
 
-// Drawn by the client while the engine is starting up.
-clientLoading
-{
-	nomipmaps
-	{
-		map gfx/clientLoading.png
-	}
-}
-
 console
 {
 	nomipmaps
