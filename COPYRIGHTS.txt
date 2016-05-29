@@ -1,7 +1,7 @@
 Copyrights and licenses for data files.
 
 == ZTM ==
-All of the data files, unless otherwise noted, are copyright (c) 2009-2013 Zack Middleton and are licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported (CC-BY-SA-3.0).
+All of the data files, unless otherwise noted, are copyright (c) 2009-2016 Zack Middleton and are licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported (CC-BY-SA-3.0).
 
 The data files that have source files are included in the _sourcefiles directory.
 
@@ -80,9 +80,10 @@ textures/ctf2/redteam01.png
 textures/fog/fogblack.png
 textures/fog/fogwhite.png
 
+Images that use M+ 1mn Bold:
+gfx/loading/screen001.png
+
 Images that use M+ 1mn Regular:
-gfx/clientLoading.png
-gfx/clientLoading_low.png
 textures/tech/terminal.png
 textures/tech/terminal_editor.png
 
@@ -155,3 +156,29 @@ fonts/mplus-1c-regular.ttf
 fonts/mplus-1c-bold.ttf
 fonts/mplus-1mn-regular.ttf
 fonts/mplus-2p-black.ttf
+
+== Loading Screens ==
+The following are licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported
+and contain text using the M+ 1mn bold font.
+
+gfx/loading/screen001.jpg is an original work by Zack Middleton, licensed under CC BY-SA 3.0 Unported.
+
+The following were modified by Zack Middleton to add "loading..." text and game icon.
+The scale and aspect was changed for better OpenGL texture handling.
+Some images were cropped and/or have borders added.
+
+gfx/loading/screen002.jpg is a derivative of "https://commons.wikimedia.org/wiki/File:Trachemys_scripta_elegans,_group.jpg" by MAKY.OREL, used under CC BY-SA 3.0 Unported.
+gfx/loading/screen002.jpg is licensed under CC BY-SA 3.0 Unported by Zack Middleton.
+
+gfx/loading/screen003.jpg is a derivative of "https://commons.wikimedia.org/wiki/File:Trachemys_scripta.JPG" by Massimo L., used under CC BY-SA 3.0 Unported.
+gfx/loading/screen003.jpg is licensed under CC BY-SA 3.0 Unported by Zack Middleton.
+
+gfx/loading/screen004.jpg is a derivative of "https://commons.wikimedia.org/wiki/File:Trachemys_scripta_elegans10.jpg" by Eugene Zelenko, used under CC BY-SA 3.0 Unported.
+gfx/loading/screen004.jpg is licensed under CC BY-SA 3.0 Unported by Zack Middleton.
+
+gfx/loading/screen005.jpg is a derivative of "https://commons.wikimedia.org/wiki/File:Tortuga_de_orejas_rojas_(Trachemys_scripta_elegans),_Jard%C3%ADn_Bot%C3%A1nico,_M%C3%BAnich,_Alemania_2012-04-21,_DD_13.JPG" by Diego Delso, used under CC BY-SA 3.0 Unported.
+gfx/loading/screen005.jpg is licensed under CC BY-SA 3.0 Unported by Zack Middleton.
+
+gfx/loading/screen006.jpg is a derivative of "https://commons.wikimedia.org/wiki/File:W1130-TortueFloride_PatteAV_75028.JPG" by Llann Wé², used under CC BY-SA 3.0 Unported.
+gfx/loading/screen006.jpg is licensed under CC BY-SA 3.0 Unported by Zack Middleton.
+

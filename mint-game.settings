@@ -1,5 +1,10 @@
 defaultSound "sound/misc/silence.wav"
-addLoadingScreen gfx/loading/screen001 ( 0.050981 0.050981 0.050981 ) 1.333333
+addLoadingScreen gfx/loading/screen001.png ( 0.050981 0.050981 0.050981 ) 1.333333
+addLoadingScreen gfx/loading/screen002.jpg ( 0.050981 0.050981 0.050981 ) 1.333333
+addLoadingScreen gfx/loading/screen003.jpg ( 0.050981 0.050981 0.050981 ) 1.333333
+addLoadingScreen gfx/loading/screen004.jpg ( 0.050981 0.050981 0.050981 ) 1.333333
+addLoadingScreen gfx/loading/screen005.jpg ( 0.050981 0.050981 0.050981 ) 1.333333
+addLoadingScreen gfx/loading/screen006.jpg ( 0.050981 0.050981 0.050981 ) 1.333333
 cvarDefault r_overBrightBits 0
 cvarDefault r_mapOverBrightBits 1
 
