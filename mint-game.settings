@@ -8,6 +8,7 @@ addLoadingScreen gfx/loading/screen001.png ( 0.050981 0.050981 0.050981 ) 1.3333
 cvarDefault r_overBrightBits 0
 cvarDefault r_mapOverBrightBits 1
 cvarDefault com_gamename TurtleArena
+cvarDefault com_demoext turtlearenademo
 
 paksums {
 	//assets0	0000000000 // Data
