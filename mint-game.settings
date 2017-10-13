@@ -11,7 +11,7 @@ cvarDefault com_gamename TurtleArena
 cvarDefault com_demoext turtlearenademo
 
 paksums {
-	//assets0	0000000000 // Data
-	//assets1	0000000000 // QVMs
+	assets0	978158291 // Data
+	assets1	2132840332 // QVMs
 }
 
