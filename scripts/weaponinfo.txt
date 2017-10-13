@@ -421,7 +421,7 @@ weapon "w_hammer"
 	weapontype WT_MELEE
 	model "models/weapons2/hammer/hammer.md3"
 	//mod MOD_HAMMER
-	attackDelay 2500
+	attackDelay 1500
 	impactMarkName "gfx/damage/hammer_mrk"
 	impactMarkRadius 8
 
@@ -462,7 +462,7 @@ weapon "w_axe"
 	weapontype WT_MELEE
 	model "models/weapons2/axe/axe.md3"
 	//mod MOD_AXE
-	attackDelay 2500
+	attackDelay 1500
 	impactMarkName "gfx/damage/hole_lg_mrk"
 	impactMarkRadius 12
 	cuts 1
