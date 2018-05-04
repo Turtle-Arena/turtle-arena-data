@@ -1,28 +1,29 @@
 // Sprite shaders.
 // A sprite is a image in the 3D world that always faces the camera.
 
-// ZTM: Drawn over player's head when in console or chat mode.
+// Drawn over player's head when in console or chat mode.
 sprites/talkBalloon
 {
+	cull none
 	nomipmaps
 	entityMergable
 	{
-		map sprites/talkBalloon.png
-		blendfunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		map sprites/balloon3
+		blendfunc blend
 	}
 }
 
 waterBubble
 {
-	sort underwater
 	cull none
 	nomipmaps
 	entityMergable
+	sort underwater
 	{
-		map sprites/bubble.png
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-		rgbGen		vertex
-		alphaGen	vertex
+		map sprites/bubble
+		blendFunc blend
+		rgbGen vertex
+		alphaGen vertex
 	}
 }
 
@@ -31,67 +32,64 @@ smokePuff
 {
 	cull none
 	nomipmaps
-	entityMergable		// allow all the sprites to be merged together
+	entityMergable
 	{
-		map gfx/misc/smokepuff3.png
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-		rgbGen		vertex
-		alphaGen	vertex
+		map gfx/misc/smokepuff3
+		blendFunc blend
+		rgbGen vertex
+		alphaGen vertex
 	}
 }
 
-// ZTM: Drawn at player's feet when player has speed powerups
+// Drawn at player's feet when player has haste powerup
 hasteSmokePuff
 {
 	cull none
 	nomipmaps
-	entityMergable		// allow all the sprites to be merged together
+	entityMergable
 	{
-		map gfx/misc/smokepuff3.png
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-                //blendfunc GL_ONE GL_ONE
-		rgbGen		vertex
-		alphaGen	vertex
+		map gfx/misc/smokepuff3
+		blendFunc blend
+		rgbGen vertex
+		alphaGen vertex
 	}
 }
 
-// ZTM: Empty transparent image.
+// Empty transparent image.
 smokePuffRagePro
 {
 	cull none
 	nomipmaps
-	entityMergable		// allow all the sprites to be merged together
+	entityMergable
 	{
-		map gfx/misc/smokepuffragepro.png
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		map gfx/misc/smokepuffragepro
+		blendFunc blend
 	}
 }
 
-// ZTM:
-// Used for breath, g_enableBreath 1 in console
-// or "enableBreath" "1" in worldspawn
+// Used for shotgun effect and Team Arena breath effect
 shotgunSmokePuff
 {
-	nomipmaps
-	entityMergable // ZTM: Should be okay.
 	cull none
+	nomipmaps
+	//entityMergable // hmm? will this break rgb/alphaGen entity?
 	{
-		map gfx/misc/smokepuff2b.png
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		map gfx/misc/smokepuff2b
+		blendFunc blend
 		alphaGen entity
 		rgbGen entity
 	}
 }
 
-// From Team Arena's pak0.pk3/scripts/gfx2.shader
+// Team Arena nailgun nail trail
 nailtrail
 {
+	cull none
 	nomipmaps
 	sort nearest
-	cull none
 	{
-		clampmap models/weaphits/nailtrail.png
-		blendFunc Add
+		clampmap models/weaphits/nailtrail
+		blendFunc add
 		rgbGen vertex
 		tcMod rotate -30
 	}
@@ -99,76 +97,69 @@ nailtrail
 
 flareShader
 {
-	nomipmaps
-	//entityMergable // ZTM: Should be okay?
 	cull none
+	nomipmaps
+	entityMergable
 	{
-		map gfx/misc/flare.tga
-		blendFunc GL_ONE GL_ONE
+		map gfx/misc/flare
+		blendFunc add
 		rgbGen vertex
 	}
 }
 
 sun
 {
-	nomipmaps
-	//entityMergable // ZTM: Should be okay?
 	cull none
+	nomipmaps
+	entityMergable
 	{
-		map gfx/misc/sun.png
-		blendfunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		map gfx/misc/sun
+		blendfunc blend
 		rgbGen vertex
 	}
 }
 
-// ZTM: Used in Team modes, it is above your teammate's head.
+// Used in team modes, it is above your teammate's head
 sprites/team_red
 {
-	entityMergable
+	cull none
 	nomipmaps
-	{
-		map sprites/friend_r.png
-		blendfunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	}
+	entityMergable
+	implicitBlend sprites/friend_r
 }
 
 sprites/team_blue
 {
-	entityMergable
+	cull none
 	nomipmaps
-	{
-		map sprites/friend_b.png
-		blendfunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	}
+	entityMergable
+	implicitBlend sprites/friend_b
 }
 
 // Shows over the target entity
 sprites/target
 {
-	entityMergable
+	cull none
 	nomipmaps
-	{
-		map sprites/target.png
-		blendfunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	}
+	entityMergable
+	implicitBlend -
 }
 
+// Plasma gun missile sprite
 // note: plasma trail uses railDisc
 // Can't use "entityMergable" each rotates seperate.
 sprites/plasma1
 {
+	cull none
 	nomipmaps
-	cull disable
 	{
-		clampmap sprites/plasmaa.png
-		blendfunc GL_ONE GL_ONE
+		clampmap sprites/plasmaa
+		blendfunc add
 		tcMod rotate 931
 	}
-
-	// ZTM: Looks cool.
 	{
-		clampmap sprites/plasmaa.png
-		blendfunc GL_ONE GL_ONE
+		clampmap sprites/plasmaa
+		blendfunc add
 		tcMod rotate 460
 	}
 }

@@ -8,6 +8,7 @@ The data files that have source files are included in the _sourcefiles directory
 The following use M+ Outline Fonts, for font license see M+FONTS_LICENSE.txt.
 
 Images that use M+ 1c Bold:
+gfx/2d/net.png
 gfx/2d/numbers/eight_32b.png
 gfx/2d/numbers/five_32b.png
 gfx/2d/numbers/four_32b.png
@@ -152,6 +153,19 @@ botfiles/rchat.c
 botfiles/rnd.c
 botfiles/syn.c
 botfiles/teamplay.h
+
+== id Software ==
+The following are based on files from Quake III Arena source code and are copyright (C) 1999-2005 Id Software, Inc. 2009-2013 Zack Middleton and are licensed under the GNU General Public License; either version 2 of the License, or (at your option) any later version.
+
+botfiles/chars.h
+botfiles/inv.h
+botfiles/match.h
+botfiles/syn.h
+ui/hud.txt
+ui/hud2.txt
+ui/ingame.txt
+ui/menudef.h
+ui/menus.txt
 
 == M+ Outline Fonts ==
 The following files are Copyright (C) 2002-2012 M+ FONTS PROJECT. See M+FONTS_LICENSE.txt for license.

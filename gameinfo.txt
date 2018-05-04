@@ -1,33 +1,41 @@
 // Used by missionpack scriptable ui
 
 // Used in "Single Player" and Start Server menus
-gametypes {
-  { "Free For All" 0 }
-  { "Duel" 1 } // Renamed from Tournament
-  { "Cooperative" 2 }
-  { "Team Deathmatch" 3 }
-  { "Capture the Flag" 4 }
-  { "One Flag CTF" 5 }
-  { "Overload" 6 }
-  //{ "Harvester" 7 }		// ZTM: Removed Harvester gametype.
+// name, gametype number
+gametypes
+{
+	{ "Free For All" 0 }
+	{ "Duel" 1 } // ZTM: Renamed from Tournament
+	{ "Cooperative" 2 }
+	{ "Team Deathmatch" 3 }
+	{ "Capture the Flag" 4 }
+	{ "One Flag CTF" 5 }
+	{ "Overload" 6 }
+	//{ "Harvester" 7 }		// ZTM: Removed Harvester gametype.
 }
 
 // Used in Join Server menu
-joingametypes {
-  { "All" -1 }
-  { "Free For All" 0 }
-  { "Duel" 1 } // Renamed from Tournament
-  { "Cooperative" 2 }
-  { "Team Deathmatch" 3 }
-  { "Capture the Flag" 4 }
-  { "One Flag CTF" 5 }
-  { "Overload" 6 }
-  //{ "Harvester" 7 }		// ZTM: Removed Harvester gametype.
+// name, gametype number
+joingametypes
+{
+	{ "All" -1 }
+	{ "Free For All" 0 }
+	{ "Duel" 1 } // ZTM: Renamed from Tournament
+	{ "Cooperative" 2 }
+	{ "Team Deathmatch" 3 }
+	{ "Capture the Flag" 4 }
+	{ "One Flag CTF" 5 }
+	{ "Overload" 6 }
+	//{ "Harvester" 7 }		// ZTM: Removed Harvester gametype.
 }
 
-// mapName, mapLoadName, teamMembers, opponentName, gametypenum "timetobeat" gametypenum "timetobeat" ...
-maps {
-	{ "Subway" "subway" "1"		  "Leo"			0 "0" 4 "240" 5 "210" 6 "210" }
-	{ "Narrows" "team1" "1"		  "Leo"			0 "0" 4 "240" 5 "210" 6 "210" }
+// Single Player map list
+// mapName, mapLoadName, teamMembers, opponentName (in bots.txt), gametypenum "timetobeat" gametypenum "timetobeat" ...
+maps
+{
+	{ "Subway"         "subway"         "3" "Leo"       4 "300" 5 "300" 6 "300" 7 "300" }
+	{ "Narrows"        "team1"          "3" "Leo"       4 "300" 5 "300" 6 "300" 7 "300" }
+
+	{ "Leaks"          "dm1"            "1" "Leo"       1 "300" }
 }
 

@@ -1,38 +1,41 @@
 // Used by missionpack scriptable ui
 
-// Bot names can be characters or aliases (or bots.txt names?)
+// Bot names can be characters or aliases (or bots.txt names but game
+// prints a warning).
 // Beside the "asset" there is two images loaded based on it,
 //    "asset_metal" (metal version of asset) and "asset_name" (image of the name).
-teams {
-	// name of team, asset, bot1, bot2, bot3, bot4, bot5
-
-	// Ideally teams should not all have the exact same characters.
+//
+// name of team, asset, bot1, bot2, bot3, bot4, bot5
+teams
+{
 	{ "Shell" "ui/assets/shell" "Leo" "Don" "Raph" "Mike" "Leo" }
 	{ "Clover" "ui/assets/clover" "Leo" "Don" "Raph" "Mike" "Leo" }
 	{ "Katanas" "ui/assets/katanas" "Leo" "Don" "Raph" "Mike" "Leo" }
 	{ "Sais" "ui/assets/sais" "Leo" "Don" "Raph" "Mike" "Leo" }
 }
 
-// character name ( used for display and head derivation ), base model (male=James, female=Janet, else uses text)
-characters {
-	// Character for "Random" bot (Works in start server menu, but doesn't work ingame)
-	//{ "Random Bot"	"male" }
-
-	// name (display and head model), base model (torso/legs)
-	{ "leo"		"leo" }
-	{ "don"		"don" }
-	{ "raph"	"raph" }
-	{ "mike"	"mike" }
+// Player selectable characters. The character names need to be valid
+// bots in bots.txt.
+//
+// character name (display and head model), base model (torso/legs)
+//   base model male=James, female=Janet, otherwise uses text specified
+characters
+{
+	{ "Leo"		"leo" }
+	{ "Don"		"don" }
+	{ "Raph"	"raph" }
+	{ "Mike"	"mike" }
 }
 
-// character name, bot alias (in bots.txt), and preferred action (a - all purpose, d - defense, o - offense)
-aliases {
-	// Alias for "Random" bot (Works in start server menu, but doesn't work ingame)
-	//{ "Random Bot"		"Random"		"a" }
-
-	{ "Leo"				"leo"			"a" }
-	{ "Don"				"don"			"a" }
-	{ "Raph"			"Raph"			"o" }
-	{ "Mike"			"Mike"			"d" }
+// Bot altnames for use in teams list. Preferred action is handled by
+// the bot ai file listed in bots.txt.
+//
+// character name, bot alias (in bots.txt), and (unused) preferred action (a - all purpose, d - defense, o - offense)
+aliases
+{
+	{ "Leo2"			"leo"			"a" }
+	{ "Don2"			"don"			"a" }
+	{ "Raph2"			"raph"			"a" }
+	{ "Mike2"			"mike"			"a" }
 }
 

@@ -5,7 +5,7 @@
 powerups/yellow
 {
 	{
-		map models/misc/yellow.png
+		map models/misc/yellow
 		blendfunc add
 		rgbGen wave sin .5 .3 0 .6
 		alphaGen entity
@@ -16,7 +16,7 @@ powerups/yellow
 powerups/red
 {
 	{
-		map models/misc/red.png
+		map models/misc/red
 		blendfunc add
 		rgbGen wave sin .5 .3 0 .6
 		alphaGen entity
@@ -27,7 +27,7 @@ powerups/red
 powerups/blue
 {
 	{
-		map models/misc/telep.png
+		map models/misc/telep
 		blendfunc add
 		rgbGen wave sin .5 .3 0 .6
 		alphaGen entity
@@ -38,7 +38,7 @@ powerups/blue
 powerups/invisibility
 {
 	{
-		map textures/effects/invismap.jpg
+		map textures/effects/invismap
 		blendfunc GL_ONE GL_ONE
 		rgbGen lightingDiffuse
 		tcMod turb 0 0.15 0 0.25

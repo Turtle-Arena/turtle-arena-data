@@ -3,10 +3,7 @@
 menu/art/titlebanner
 {
 	nomipmaps
-	{
-		map menu/art/titlebanner.png
-		blendfunc blend
-	}
+	implicitBlend -
 }
 
 gfx/2d/bigchars
@@ -14,8 +11,8 @@ gfx/2d/bigchars
 	nopicmip
 	nomipmaps
 	{
-		map gfx/2d/bigchars.png
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		map gfx/2d/bigchars
+		blendFunc blend
 		rgbgen vertex
 	}
 }
@@ -24,8 +21,8 @@ gfx/2d/select
 {
 	nopicmip
 	{
-		map gfx/2d/select.png
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		map gfx/2d/select
+		blendFunc blend
 		rgbGen identity
 		rgbgen vertex
 	}
@@ -75,55 +72,40 @@ levelShotDetail
 {
 	nopicmip
 	{
-		map textures/sfx/detail.jpg
+		map textures/sfx/detail
 		blendFunc GL_DST_COLOR GL_SRC_COLOR
 		rgbgen identity
 	}
 }
 
-// cgame bot skill shaders...
+// Used in skill select menu and on HUD for bots
 menu/art/skill1
 {
 	nomipmaps
-	{
-		map menu/art/skill1.png
-		blendfunc blend
-	}
+	implicitBlend -
 }
 
 menu/art/skill2
 {
 	nomipmaps
-	{
-		map menu/art/skill2.png
-		blendfunc blend
-	}
+	implicitBlend -
 }
 
 menu/art/skill3
 {
 	nomipmaps
-	{
-		map menu/art/skill3.png
-		blendfunc blend
-	}
+	implicitBlend -
 }
 
 menu/art/skill4
 {
 	nomipmaps
-	{
-		map menu/art/skill4.png
-		blendfunc blend
-	}
+	implicitBlend -
 }
 
 menu/art/skill5
 {
 	nomipmaps
-	{
-		map menu/art/skill5.png
-		blendfunc blend
-	}
+	implicitBlend -
 }
 

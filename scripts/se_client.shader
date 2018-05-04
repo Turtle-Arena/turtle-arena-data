@@ -1,21 +1,12 @@
-// Shaders used by the client
-
-console
-{
-	nomipmaps
-	{
-		map gfx/misc/console01.png
-		blendFunc blend
-		tcMod scroll -0.01 -0.005
-	}
-}
+// Shaders used by the client (engine) directly
 
 white
 {
 	{
 		map *white
-		blendfunc	GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-		rgbgen vertex
+		blendfunc blend
+		// NOTE: If registered as 2D, Spearmint uses vertex for lightingDiffuse. Allows using on 3D models and in UI.
+		rgbgen lightingDiffuse
 	}
 }
 

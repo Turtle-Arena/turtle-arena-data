@@ -9,148 +9,35 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="256"
-   height="128"
+   width="512"
+   height="256"
    id="svg2"
-   inkscape:version="0.48.2 r9819"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="ping.svg"
-   inkscape:export-filename="/home/zack/turtlearena/svn/trunk/base-src/menu/tab/ping.png"
+   inkscape:export-filename="/home/zack/Programs/arena-data/menu/art/create_1.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     id="base"
+     pagecolor="#000000"
      bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
+     borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1152"
-     inkscape:window-height="810"
-     id="namedview33"
+     inkscape:zoom="1.4"
+     inkscape:cx="292.66313"
+     inkscape:cy="102.37307"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:zoom="2.53125"
-     inkscape:cx="133.92641"
-     inkscape:cy="55.295017"
+     inkscape:window-width="1920"
+     inkscape:window-height="993"
      inkscape:window-x="0"
-     inkscape:window-y="26"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg2" />
-  <defs
-     id="defs4">
-    <filter
-       x="-0.25"
-       y="-0.25"
-       width="1.5"
-       height="1.5"
-       color-interpolation-filters="sRGB"
-       id="filter3706">
-      <feGaussianBlur
-         result="blur"
-         stdDeviation="2.5"
-         in="SourceAlpha"
-         id="feGaussianBlur3708" />
-      <feColorMatrix
-         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.8 0 "
-         type="matrix"
-         result="bluralpha"
-         id="feColorMatrix3710" />
-      <feOffset
-         result="offsetBlur"
-         dy="5"
-         dx="5"
-         in="bluralpha"
-         id="feOffset3712" />
-      <feMerge
-         id="feMerge3714">
-        <feMergeNode
-           in="offsetBlur"
-           id="feMergeNode3716" />
-        <feMergeNode
-           in="SourceGraphic"
-           id="feMergeNode3718" />
-      </feMerge>
-    </filter>
-    <filter
-       x="-0.25"
-       y="-0.25"
-       width="1.5"
-       height="1.5"
-       color-interpolation-filters="sRGB"
-       id="filter3720">
-      <feGaussianBlur
-         result="blur"
-         stdDeviation="2.5"
-         in="SourceAlpha"
-         id="feGaussianBlur3722" />
-      <feColorMatrix
-         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.8 0 "
-         type="matrix"
-         result="bluralpha"
-         id="feColorMatrix3724" />
-      <feOffset
-         result="offsetBlur"
-         dy="5"
-         dx="5"
-         in="bluralpha"
-         id="feOffset3726" />
-      <feMerge
-         id="feMerge3728">
-        <feMergeNode
-           in="offsetBlur"
-           id="feMergeNode3730" />
-        <feMergeNode
-           in="SourceGraphic"
-           id="feMergeNode3732" />
-      </feMerge>
-    </filter>
-    <filter
-       x="-0.25"
-       y="-0.25"
-       width="1.5"
-       height="1.5"
-       color-interpolation-filters="sRGB"
-       id="filter3782">
-      <feGaussianBlur
-         result="blur"
-         stdDeviation="2.5"
-         in="SourceAlpha"
-         id="feGaussianBlur3784" />
-      <feColorMatrix
-         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.8 0 "
-         type="matrix"
-         result="bluralpha"
-         id="feColorMatrix3786" />
-      <feOffset
-         result="offsetBlur"
-         dy="5"
-         dx="5"
-         in="bluralpha"
-         id="feOffset3788" />
-      <feMerge
-         id="feMerge3790">
-        <feMergeNode
-           in="offsetBlur"
-           id="feMergeNode3792" />
-        <feMergeNode
-           in="SourceGraphic"
-           id="feMergeNode3794" />
-      </feMerge>
-    </filter>
-    <filter
-       x="-0.015391304"
-       y="-0.58999997"
-       width="1.0307826"
-       height="2.1800001"
-       color-interpolation-filters="sRGB"
-       id="filter4610">
-      <feGaussianBlur
-         id="feGaussianBlur4612"
-         stdDeviation="1.475" />
-    </filter>
-  </defs>
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -159,30 +46,30 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
      id="layer1">
     <path
-       d="m 18,120 230,0 0,6 -230,0 z"
-       id="rect3504-4"
-       style="opacity:0.8;fill:#2e3436;fill-opacity:1;stroke:none;filter:url(#filter4610)" />
+       style="fill:#cc0000;fill-opacity:1;stroke:none"
+       d="m 430.60787,207.99994 -404.21574,0 54.999998,-159.999875 404.215742,0 z"
+       id="rect2987-7-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
     <text
-       x="41.459999"
-       y="93.199997"
-       id="text3506"
        xml:space="preserve"
-       style="font-size:80px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#eeeeec;fill-opacity:1;stroke:none;filter:url(#filter3720);font-family:'M+ 1c';-inkscape-font-specification:'M+ 1c Bold'"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#d3d7cf;fill-opacity:1;stroke:none;font-family:'M+ 1c';-inkscape-font-specification:'M+ 1c Bold'"
+       x="255.59837"
+       y="154.64"
+       id="text3758-0-9"
        sodipodi:linespacing="125%"><tspan
-         x="41.459999"
-         y="93.199997"
-         id="tspan3508"
-         style="font-weight:bold;-inkscape-font-specification:'M+ 1c Bold'">Ping</tspan></text>
-    <path
-       d="m 13,114.99999 230,0 0,6 -230,0 z"
-       id="rect3504"
-       style="fill:#eeeeec;fill-opacity:1;stroke:none" />
+         sodipodi:role="line"
+         id="tspan3760-7-4"
+         x="255.59837"
+         y="154.64">Ping</tspan></text>
   </g>
 </svg>
