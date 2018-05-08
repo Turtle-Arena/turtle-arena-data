@@ -151,6 +151,7 @@ textures/base_wall/ladder_wood
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	surfaceparm nomarks
 	surfaceparm wood
 	cull none
 	nopicmip
@@ -176,6 +177,7 @@ textures/base_wall/ladder_metal
 	surfaceparm trans
 	surfaceparm alphashadow
 	surfaceparm nonsolid
+	surfaceparm nomarks
 	surfaceparm metal
 	cull none
 	nopicmip
